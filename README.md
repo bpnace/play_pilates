@@ -79,3 +79,4 @@ Beispiele:
 - [x] Phase 2: Theme Tokens + Tailwind Integration
 - [x] Phase 3: Core Layout Components
 - [x] Phase 4: Dummy-Seiten (Kurse, Preise, Über uns, Kontakt, Blog, Mitglieder)
+- [x] Startseite: Dummy-Layout + Platzhalterbilder

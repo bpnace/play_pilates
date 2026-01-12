@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { asset } from '$app/paths';
   import Container from '$lib/components/ui/Container.svelte';
   import Navigation from '$lib/components/layout/Navigation.svelte';
   import MobileMenu from '$lib/components/layout/MobileMenu.svelte';
@@ -11,9 +12,7 @@
   <Container>
     <div class="flex items-center justify-between py-4">
       <div class="flex items-center gap-3">
-        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white">
-          PP
-        </div>
+        <img src={asset('/images/playLogo1.svg')} alt="Play Pilates Logo" class="h-10 w-10" />
         <div class="leading-tight">
           <p class="text-sm text-gray-500">Play Pilates</p>
           <p class="font-heading text-2xl text-gray-900">Studio</p>
