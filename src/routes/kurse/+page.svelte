@@ -29,7 +29,7 @@
       duration: '55 Min',
       spots: '6 Plätze',
       availability: 'Mi, 19:30',
-      accent: 'bg-accent-50 text-accent-700 border-accent-200',
+      accent: 'bg-purple-50 text-purple-700 border-purple-200',
     },
     {
       level: 'All Levels',
