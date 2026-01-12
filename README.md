@@ -2,7 +2,7 @@
 
 Developer-Roadmap für eine moderne Reformer-Pilates-Studio Website (SvelteKit + TailwindCSS + Headless Drupal + pnpm).
 
-> Hinweis: Dieses Repo ist als technische Roadmap gedacht. Der eigentliche Code entsteht ab Phase 1.
+> Hinweis: Dieses Repo enthält bereits das Basis-Setup aus Phase 1. Die Roadmap beschreibt die nächsten Ausbaustufen.
 
 ## Inhalt
 
@@ -35,18 +35,40 @@ Performante Studio-Website mit gepflegten Inhalten über ein Headless-Drupal (JS
 - Befehle/Install: `pnpm` (kein `npm`/`yarn`), `pnpm dlx` statt `npx`.
 - Diese README beschreibt ein Zielbild; Details (Adapter, i18n-Strategy, Drupal-Model) bitte an die finalen Anforderungen anpassen.
 
+### Quickstart (lokal)
+
+```bash
+pnpm install
+pnpm dev
+```
+
+Nützliche Commands:
+
+```bash
+pnpm run check
+pnpm run lint
+pnpm test
+pnpm run test:e2e
+```
+
+Falls Playwright meldet, dass Browser fehlen:
+
+```bash
+pnpm exec playwright install chromium
+```
+
 ## Roadmap auf einen Blick
 
-| Phase | Fokus | Dauer | Ergebnis/Checkpoint |
-|------:|-------|-------|---------------------|
-| 1 | Setup & Foundation | 2–3 Std | SvelteKit + Tailwind läuft lokal |
-| 2 | Theme & Design System | 2–3 Std | Theme-Config + Tailwind integriert |
-| 3 | Core Layout Components | 1 Tag | Header/Footer/UI-Bausteine ready |
-| 4 | Page Implementation | 2–3 Tage | Hauptseiten implementiert (Mock-Daten) |
-| 5 | Drupal Integration | 2–3 Tage | Drupal Daten kommen serverseitig in SvelteKit an |
-| 6 | Internationalization (i18n) | 1–2 Tage | DE/EN Umschaltung & Übersetzungen |
-| 7 | Animations & Polish | 2–3 Tage | Micro-Interactions + Fade-In/Parallax |
-| 8 | Testing & Deployment | 2–3 Tage | Tests/Build/Deployment live |
+| Phase | Fokus                       | Dauer    | Ergebnis/Checkpoint                              |
+| ----: | --------------------------- | -------- | ------------------------------------------------ |
+|     1 | Setup & Foundation          | 2–3 Std  | SvelteKit + Tailwind läuft lokal                 |
+|     2 | Theme & Design System       | 2–3 Std  | Theme-Config + Tailwind integriert               |
+|     3 | Core Layout Components      | 1 Tag    | Header/Footer/UI-Bausteine ready                 |
+|     4 | Page Implementation         | 2–3 Tage | Hauptseiten implementiert (Mock-Daten)           |
+|     5 | Drupal Integration          | 2–3 Tage | Drupal Daten kommen serverseitig in SvelteKit an |
+|     6 | Internationalization (i18n) | 1–2 Tage | DE/EN Umschaltung & Übersetzungen                |
+|     7 | Animations & Polish         | 2–3 Tage | Micro-Interactions + Fade-In/Parallax            |
+|     8 | Testing & Deployment        | 2–3 Tage | Tests/Build/Deployment live                      |
 
 Geschätzte Gesamtdauer: 3–4 Wochen (Vollzeit; abhängig von Content/Drupal-Setup).
 
@@ -417,7 +439,8 @@ export class DrupalClient {
       },
     });
 
-    if (!response.ok) throw new Error(`Drupal API Error: ${response.status} ${response.statusText}`);
+    if (!response.ok)
+      throw new Error(`Drupal API Error: ${response.status} ${response.statusText}`);
     return (await response.json()) as T;
   }
 
@@ -570,8 +593,8 @@ Checkpoint: Website ist live (Static oder VPS).
 
 Wenn du direkt starten willst:
 
-1) Phase 1 (SvelteKit + Tailwind + Ordnerstruktur)  
-2) Phase 2 (Theme config + Tailwind Integration)  
-3) Phase 3 (Header/Footer/UI)  
-4) Phase 4 (Seiten mit Mock-Daten)  
-5) Danach: Drupal + i18n + Polish + Deployment
+1. Phase 1 (SvelteKit + Tailwind + Ordnerstruktur)
+2. Phase 2 (Theme config + Tailwind Integration)
+3. Phase 3 (Header/Footer/UI)
+4. Phase 4 (Seiten mit Mock-Daten)
+5. Danach: Drupal + i18n + Polish + Deployment
