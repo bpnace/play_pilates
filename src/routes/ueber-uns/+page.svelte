@@ -55,6 +55,31 @@
           </Card>
         {/each}
       </div>
+
+      <div class="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
+        <img
+          src={asset('/images/team/about-1.svg')}
+          alt="Studio Story Placeholder"
+          class="mb-6 w-full rounded-2xl border border-gray-200 md:float-right md:mb-4 md:ml-6 md:w-72"
+        />
+        <p class="text-sm uppercase tracking-[0.2em] text-gray-500">Werdegang</p>
+        <h2 class="mt-3 font-heading text-4xl text-gray-900">Idee & Umsetzung</h2>
+        <p class="mt-3 text-lg text-gray-600">
+          Dummy-Text: Play Pilates entstand aus dem Wunsch, Reformer-Training klar, fokussiert und
+          zugänglich zu machen. Wir verbinden präzise Technik mit einem ruhigen Studio‑Rhythmus, der
+          Training und Alltag in Balance bringt.
+        </p>
+        <p class="mt-4 text-lg text-gray-600">
+          Dummy-Text: Unsere Coaches kommen aus Tanz, Athletik und Therapie. Jede Klasse folgt einem
+          klaren Aufbau: Warm‑up, Fokus‑Block, Integration. So entsteht ein Training, das Woche für
+          Woche spürbar wirkt.
+        </p>
+        <p class="mt-4 text-lg text-gray-600">
+          Dummy-Text: Der nächste Schritt ist die Anbindung an das CMS. Inhalte, Kurse und Team
+          lassen sich dann zentral pflegen und automatisch im Frontend ausspielen.
+        </p>
+        <div class="clear-both"></div>
+      </div>
     </div>
   </Container>
 </Section>
