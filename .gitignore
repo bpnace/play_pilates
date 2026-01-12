@@ -33,6 +33,7 @@ yarn-error.log*
 coverage
 playwright-report
 test-results
+dev_plan.md
 
 # Cache
 .eslintcache
@@ -40,3 +41,6 @@ test-results
 # IDE
 .idea
 .vscode
+
+# Local-only
+.npmrc
