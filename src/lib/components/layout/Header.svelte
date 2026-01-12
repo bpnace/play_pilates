@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { asset } from '$app/paths';
+  import { asset, resolve } from '$app/paths';
+  import type { Pathname } from '$app/types';
   import Container from '$lib/components/ui/Container.svelte';
   import Navigation from '$lib/components/layout/Navigation.svelte';
   import MobileMenu from '$lib/components/layout/MobileMenu.svelte';
@@ -11,13 +12,13 @@
 <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-gray-100">
   <Container>
     <div class="flex items-center justify-between py-4">
-      <div class="flex items-center gap-3">
+      <a href={resolve('/' as Pathname)} class="flex items-center gap-3">
         <img src={asset('/images/playLogo1.svg')} alt="Play Pilates Logo" class="h-10 w-10" />
         <div class="leading-tight">
           <p class="text-sm text-gray-500">Play Pilates</p>
           <p class="font-heading text-2xl text-gray-900">Studio</p>
         </div>
-      </div>
+      </a>
 
       <Navigation />
 

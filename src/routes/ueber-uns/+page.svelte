@@ -9,14 +9,14 @@
       role: 'Coach',
       name: 'Nina',
       focus: 'Reformer & Posture Specialist',
-      bio: 'Klarer Fokus auf Haltung, Atmung und präzise Linien.',
+      bio: 'Klarer Fokus auf Haltung, Atmung und präzise Linien. Sie arbeitet mit feinen Korrekturen, damit jede Bewegung sauber sitzt.',
       image: asset('/images/team/team-1.svg'),
     },
     {
       role: 'Coach',
       name: 'Marie',
       focus: 'Strength & Mobility',
-      bio: 'Verbindet Kraft und Beweglichkeit in fließenden Sequenzen.',
+      bio: 'Verbindet Kraft und Beweglichkeit in fließenden Sequenzen. Ihr Stil ist klar strukturiert und ideal für Progressionen.',
       image: asset('/images/team/team-2.svg'),
     },
     {
@@ -26,6 +26,13 @@
       bio: 'Dynamische Progressionen mit Fokus auf Stabilität.',
       image: asset('/images/team/team-3.svg'),
     },
+  ];
+
+  const stats = [
+    { value: '300+', label: 'Kursteilnehmer' },
+    { value: '99%', label: 'Zufriedenheit' },
+    { value: '5', label: 'Coaches im Team' },
+    { value: '25', label: 'Klassen pro Woche' },
   ];
 </script>
 
@@ -56,6 +63,15 @@
         {/each}
       </div>
 
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {#each stats as stat (stat.label)}
+          <div class="rounded-2xl border border-gray-200 bg-white p-6 text-center shadow-sm">
+            <p class="font-heading text-3xl text-gray-900">{stat.value}</p>
+            <p class="mt-2 text-sm text-gray-500">{stat.label}</p>
+          </div>
+        {/each}
+      </div>
+
       <div class="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
         <img
           src={asset('/images/team/about-1.svg')}
@@ -65,18 +81,27 @@
         <p class="text-sm uppercase tracking-[0.2em] text-gray-500">Werdegang</p>
         <h2 class="mt-3 font-heading text-4xl text-gray-900">Idee & Umsetzung</h2>
         <p class="mt-3 text-lg text-gray-600">
-          Dummy-Text: Play Pilates entstand aus dem Wunsch, Reformer-Training klar, fokussiert und
-          zugänglich zu machen. Wir verbinden präzise Technik mit einem ruhigen Studio‑Rhythmus, der
-          Training und Alltag in Balance bringt.
+          Play Pilates entstand aus einem sehr persönlichen Wunsch: ein Reformer-Training zu
+          schaffen, das sich ruhig, klar und sicher anfühlt. Ein Ort, an dem Technik nicht laut,
+          sondern präzise ist, und an dem Fortschritt nicht drückt, sondern begleitet. Wir wollen,
+          dass jede Stunde wie ein Reset wirkt, für Körper und Kopf.
         </p>
         <p class="mt-4 text-lg text-gray-600">
-          Dummy-Text: Unsere Coaches kommen aus Tanz, Athletik und Therapie. Jede Klasse folgt einem
-          klaren Aufbau: Warm‑up, Fokus‑Block, Integration. So entsteht ein Training, das Woche für
-          Woche spürbar wirkt.
+          Unsere Coaches kommen aus Tanz, Athletik und Therapie, und genau diese Mischung prägt den
+          Stil: kraftvoll, aber nie hektisch; kontrolliert, aber nie starr. Jede Klasse folgt einem
+          vertrauten Aufbau mit Warm-up, Fokus-Block und Integration, damit du dich sicher fühlst
+          und gleichzeitig neue Reize bekommst.
         </p>
         <p class="mt-4 text-lg text-gray-600">
-          Dummy-Text: Der nächste Schritt ist die Anbindung an das CMS. Inhalte, Kurse und Team
-          lassen sich dann zentral pflegen und automatisch im Frontend ausspielen.
+          In der Konzeptphase haben wir mit kleinen Pilotgruppen gearbeitet, um Flow, Tempo und
+          Cueing zu testen. Aus echtem Feedback wurden die heutigen Formate geformt, und bis heute
+          passen wir Details an, wenn wir merken, dass etwas sich noch leichter oder klarer anfühlen
+          kann. Das ist für uns die wichtigste Qualität: zuhören, optimieren, spürbar machen.
+        </p>
+        <p class="mt-4 text-lg text-gray-600">
+          Der nächste Schritt ist die Anbindung an das CMS. So können wir Inhalte, Kurse und Team
+          zentral pflegen und den Fokus weiterhin auf das Wesentliche legen: Räume, in denen du dich
+          gut aufgehoben fühlst, und ein Training, das dich wirklich weiterbringt.
         </p>
         <div class="clear-both"></div>
       </div>

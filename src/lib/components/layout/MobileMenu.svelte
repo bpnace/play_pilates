@@ -1,9 +1,10 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
   import type { Pathname } from '$app/types';
+  import { page } from '$app/stores';
   import { site } from '$lib/config/site';
 
-  let { open = false } = $props<{ open?: boolean }>();
+  let { open = false, activeHref } = $props<{ open?: boolean; activeHref?: string }>();
 </script>
 
 <div
@@ -13,9 +14,15 @@
 >
   <div class="flex flex-col gap-4 p-6">
     {#each site.nav as item (item.href)}
+      {@const isActive = item.href === (activeHref ?? $page.url.pathname)}
       <a
-        class="text-base font-medium text-gray-800 hover:text-primary-600"
+        class={`text-base font-medium ${
+          isActive
+            ? 'text-gray-900 underline decoration-primary-500 underline-offset-8'
+            : 'text-gray-700 hover:underline hover:decoration-gray-300 underline-offset-8'
+        }`}
         href={resolve(item.href as Pathname)}
+        aria-current={isActive ? 'page' : undefined}
       >
         {item.label}
       </a>

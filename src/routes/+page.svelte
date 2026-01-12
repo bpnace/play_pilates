@@ -8,44 +8,80 @@
 
 <Section>
   <Container>
-    <div class="grid gap-10 md:grid-cols-2 md:items-center">
-      <div>
-        <p class="text-sm uppercase tracking-[0.2em] text-gray-500">Reformer Pilates</p>
-        <h1 class="mt-4 font-heading text-5xl text-gray-900 md:text-6xl">
-          Stärke, Haltung und Fokus im Studio
-        </h1>
-        <p class="mt-4 text-lg text-gray-600">
-          Moderne Klassen, präzise Betreuung und eine klare Trainingsreise – von Einsteiger bis
-          Advanced.
-        </p>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <Button href="/kurse">Kurse ansehen</Button>
-          <Button variant="secondary" href="/kontakt">Probestunde buchen</Button>
+    <div class="relative overflow-hidden rounded-3xl border border-white/40 bg-white/20 shadow-xl">
+      <video
+        class="absolute inset-0 h-full w-full object-cover"
+        src={asset('/images/hero/heroPilates1.webm')}
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="metadata"
+        aria-hidden="true"
+        tabindex="-1"
+      ></video>
+      <div class="absolute inset-0 bg-white/35 backdrop-blur-md"></div>
+
+      <div class="relative z-10 grid gap-10 p-8 md:grid-cols-2 md:items-center md:p-12">
+        <div class="rounded-3xl border border-white/70 bg-white/70 p-6 backdrop-blur-xl shadow-lg">
+          <p class="text-sm uppercase tracking-[0.2em] text-gray-500">Reformer Pilates</p>
+          <h1 class="mt-4 font-heading text-5xl text-gray-900 md:text-6xl">
+            Stärke, Haltung und Fokus im Studio
+          </h1>
+          <p class="mt-4 text-lg text-gray-600">
+            Moderne Klassen, präzise Betreuung und eine klare Trainingsreise – von Einsteiger bis
+            Advanced.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <Button href="/kurse">Kurse ansehen</Button>
+            <Button variant="secondary" href="/kontakt">Probestunde buchen</Button>
+          </div>
+          <div class="mt-6 flex flex-wrap gap-6 text-sm text-gray-500">
+            <div>
+              <p class="font-heading text-2xl text-gray-900">8</p>
+              <p>Plätze pro Klasse</p>
+            </div>
+            <div>
+              <p class="font-heading text-2xl text-gray-900">45</p>
+              <p>Minuten Fokus</p>
+            </div>
+            <div>
+              <p class="font-heading text-2xl text-gray-900">5</p>
+              <p>Formate</p>
+            </div>
+          </div>
         </div>
-        <div class="mt-6 flex items-center gap-6 text-sm text-gray-500">
-          <div>
-            <p class="font-heading text-2xl text-gray-900">8</p>
-            <p>Plätze pro Klasse</p>
+
+        <div class="grid gap-4">
+          <div class="rounded-3xl border border-white/60 bg-white/60 p-6 backdrop-blur-lg shadow-lg">
+            <p class="text-xs uppercase tracking-[0.2em] text-gray-500">Studio Snapshot</p>
+            <p class="mt-2 font-heading text-3xl text-gray-900">Live Atmosphäre</p>
+            <p class="mt-2 text-sm text-gray-600">
+              Der Flau Studio Soundtrack wurde sorgfältig kuratiert, um eine ruhige und
+              fokussierte Trainingsumgebung zu schaffen.
+            </p>
+            <div class="mt-4 grid gap-2 text-xs text-gray-600 sm:grid-cols-2">
+              <span class="rounded-full border border-white/70 bg-white/70 px-3 py-1">
+                Upbeat Vibes
+              </span>
+              <span class="rounded-full border border-white/70 bg-white/70 px-3 py-1">
+                Weiches Licht
+              </span>
+              <span class="rounded-full border border-white/70 bg-white/70 px-3 py-1">
+                Ruhiger Flow
+              </span>
+              <span class="rounded-full border border-white/70 bg-white/70 px-3 py-1">
+                Fokus &amp; Ruhe
+              </span>
+            </div>
           </div>
-          <div>
-            <p class="font-heading text-2xl text-gray-900">45</p>
-            <p>Minuten Fokus</p>
+
+          <div class="rounded-3xl border border-white/60 bg-white/60 p-6 backdrop-blur-lg shadow-lg">
+            <p class="text-xs uppercase tracking-[0.2em] text-gray-500">Diese Woche</p>
+            <p class="mt-2 text-sm text-gray-600">
+              Frühklassen Mo/Do 07:30 · Abendkurse Di/Fr 18:00 · Weekend Flow Sa 10:00
+            </p>
           </div>
-          <div>
-            <p class="font-heading text-2xl text-gray-900">5</p>
-            <p>Formate</p>
-          </div>
-        </div>
-      </div>
-      <div class="relative">
-        <img
-          src={asset('/images/hero/hero-1.svg')}
-          alt="Studio Mood Placeholder"
-          class="w-full rounded-3xl shadow-lg"
-        />
-        <div class="absolute bottom-6 left-6 rounded-2xl bg-white/90 px-4 py-3 shadow">
-          <p class="text-xs uppercase tracking-[0.2em] text-gray-500">Dummy</p>
-          <p class="text-sm font-medium text-gray-900">Studio Atmosphäre</p>
         </div>
       </div>
     </div>
