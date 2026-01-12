@@ -4,6 +4,13 @@ Developer-Roadmap für eine moderne Reformer-Pilates-Studio Website (SvelteKit +
 
 > Hinweis: Dieses Repo enthält bereits das Basis-Setup aus Phase 1. Die Roadmap beschreibt die nächsten Ausbaustufen.
 
+## Status (aktuell)
+
+- [x] Phase 1: SvelteKit Setup + Tooling (Lint, Format, Unit, E2E)
+- [x] Phase 1: Tailwind Setup + Basis-Struktur + .env.example
+- [x] Phase 2: Theme Tokens zentralisiert (JSON + theme.ts)
+- [x] Phase 2: Tailwind auf Tokens erweitert (farben, fonts, transitions)
+
 ## Inhalt
 
 - [Überblick](#überblick)
@@ -136,21 +143,18 @@ pnpm add -D tailwindcss postcss autoprefixer @tailwindcss/typography @tailwindcs
 pnpm dlx tailwindcss init -p
 ```
 
-`tailwind.config.js` (ESM):
+`tailwind.config.cjs`:
 
 ```js
-import typography from '@tailwindcss/typography';
-import forms from '@tailwindcss/forms';
-
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: { extend: {} },
-  plugins: [typography, forms],
+  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],
 };
 ```
 
-`src/styles/app.css`:
+`src/app.css`:
 
 ```css
 @tailwind base;
@@ -168,7 +172,7 @@ export default {
 
 ```svelte
 <script lang="ts">
-  import '../styles/app.css';
+  import '../app.css';
 </script>
 
 <slot />
@@ -239,7 +243,7 @@ Checkpoint: Repo sauber initialisiert, Dev-Server läuft.
 
 Ziel: Design-Tokens zentralisieren (Farben, Typo, Spacing, Animation-Dauern) und in Tailwind nutzbar machen.
 
-#### 2.1 Theme-Config anlegen (`src/lib/config/theme.ts`)
+#### 2.1 Theme-Config anlegen (`src/lib/config/theme.tokens.json` + `src/lib/config/theme.ts`)
 
 <details>
 <summary>Beispiel: theme.ts (Startpunkt)</summary>
@@ -305,24 +309,23 @@ export type Theme = typeof theme;
 
 #### 2.2 Theme in Tailwind integrieren
 
-Wichtig: `tailwind.config.*` wird von Node ausgeführt. Ein direktes Importieren von TypeScript (`theme.ts`) funktioniert ohne Zusatz-Setup in der Regel nicht. Wenn du Tokens teilen willst, lege sie als JS/JSON ab (z. B. `src/lib/config/theme.tokens.js`) und importiere diese Datei.
+Wichtig: `tailwind.config.*` wird von Node ausgeführt. Ein direktes Importieren von TypeScript (`theme.ts`) funktioniert ohne Zusatz-Setup in der Regel nicht. Die Tokens liegen daher in JSON und werden in Tailwind via `require` geladen.
 
 <details>
-<summary>Beispiel: Tailwind colors/fontFamily aus shared tokens</summary>
+<summary>Beispiel: Tailwind colors/fontFamily aus JSON tokens</summary>
 
 ```js
-import typography from '@tailwindcss/typography';
-import forms from '@tailwindcss/forms';
-import tokens from './src/lib/config/theme.tokens.js';
+const tokens = require('./src/lib/config/theme.tokens.json');
 
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
       colors: {
         primary: tokens.colors.primary,
         secondary: tokens.colors.secondary,
+        accent: tokens.colors.accent,
         gray: tokens.colors.gray,
         black: tokens.colors.black,
         white: tokens.colors.white,
@@ -333,7 +336,7 @@ export default {
       },
     },
   },
-  plugins: [typography, forms],
+  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],
 };
 ```
 
