@@ -72,3 +72,10 @@ Beispiele:
 - pnpm als Package Manager
 - Tailwind Utility-First, Tokens kommen aus `theme.tokens.json`
 - Svelte 5 Runes Syntax in neuen Komponenten
+
+## Status
+
+- [x] Phase 1: Setup + Tooling
+- [x] Phase 2: Theme Tokens + Tailwind Integration
+- [x] Phase 3: Core Layout Components
+- [x] Phase 4: Dummy-Seiten (Kurse, Preise, Über uns, Kontakt, Blog, Mitglieder)
