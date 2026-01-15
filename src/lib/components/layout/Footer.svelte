@@ -7,7 +7,7 @@
   <Container>
     <div class="grid gap-8 py-12 md:grid-cols-3">
       <div>
-        <p class="font-heading text-3xl text-gray-900">Play Pilates</p>
+        <p class="font-heading text-3xl text-gray-900">Nina Untch Pilates</p>
         <p class="mt-2 text-sm text-gray-600">{site.description}</p>
       </div>
       <div>
@@ -28,7 +28,7 @@
       </div>
     </div>
     <div class="border-t border-gray-200 py-6 text-xs text-gray-500">
-      © {new Date().getFullYear()} Play Pilates. Alle Rechte vorbehalten.
+      © {new Date().getFullYear()} Nina Untch Pilates. Alle Rechte vorbehalten.
     </div>
   </Container>
 </footer>

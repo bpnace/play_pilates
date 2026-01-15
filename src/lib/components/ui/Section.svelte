@@ -12,8 +12,8 @@
   const bgClasses: Record<string, string> = {
     white: 'bg-white text-gray-900',
     gray: 'bg-gray-50 text-gray-900',
-    black: 'bg-black text-white',
-    primary: 'bg-primary text-white',
+    black: 'bg-black text-gray-900',
+    primary: 'bg-primary text-gray-900',
   };
 
   const paddingClasses: Record<string, string> = {

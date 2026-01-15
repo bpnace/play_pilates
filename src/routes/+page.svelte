@@ -8,10 +8,10 @@
 
 <Section>
   <Container>
-    <div class="relative overflow-hidden rounded-3xl border border-white/40 bg-white/20 shadow-xl">
+    <div class="relative overflow-hidden rounded-2xl border border-white/40 bg-white/20 shadow-xl">
       <video
         class="absolute inset-0 h-full w-full object-cover"
-        src={asset('/images/hero/heroPilates1.webm')}
+        src={asset('/images/hero/heroPilates2.webm')}
         autoplay
         loop
         muted
@@ -24,62 +24,66 @@
 
       <div class="relative z-10 grid gap-10 p-8 md:grid-cols-2 md:items-center md:p-12">
         <div class="rounded-3xl border border-white/70 bg-white/70 p-6 backdrop-blur-xl shadow-lg">
-          <p class="text-sm uppercase tracking-[0.2em] text-gray-500">Reformer Pilates</p>
+          <p class="text-sm uppercase tracking-[0.2em] text-gray-500">Cadillac Reformer Training</p>
           <h1 class="mt-4 font-heading text-5xl text-gray-900 md:text-6xl">
-            Stärke, Haltung und Fokus im Studio
+            Stärke, Haltung und Fokus im Personal Training
           </h1>
           <p class="mt-4 text-lg text-gray-600">
-            Moderne Klassen, präzise Betreuung und eine klare Trainingsreise – von Einsteiger bis
-            Advanced.
+            Individuelle Cadillac Reformer Sessions in Berlin. Praezise Betreuung, klare Struktur
+            und volle Aufmerksamkeit für deine Ziele.
           </p>
           <div class="mt-6 flex flex-wrap gap-3">
-            <Button href="/kurse">Kurse ansehen</Button>
-            <Button variant="secondary" href="/kontakt">Probestunde buchen</Button>
+            <Button href="/cadillac">Der CADILLAC</Button>
+            <Button variant="secondary" href="/kontakt">Session anfragen</Button>
           </div>
           <div class="mt-6 flex flex-wrap gap-6 text-sm text-gray-500">
             <div>
-              <p class="font-heading text-2xl text-gray-900">8</p>
-              <p>Plätze pro Klasse</p>
+              <p class="font-heading text-2xl text-gray-900">1:1</p>
+              <p>Persönliche Betreuung</p>
             </div>
             <div>
-              <p class="font-heading text-2xl text-gray-900">45</p>
-              <p>Minuten Fokus</p>
+              <p class="font-heading text-2xl text-gray-900">60</p>
+              <p>Minuten pro Session</p>
             </div>
             <div>
-              <p class="font-heading text-2xl text-gray-900">5</p>
-              <p>Formate</p>
+              <p class="font-heading text-2xl text-gray-900">Berlin</p>
+              <p>Cadillac Reformer</p>
             </div>
           </div>
         </div>
 
         <div class="grid gap-4">
-          <div class="rounded-3xl border border-white/60 bg-white/60 p-6 backdrop-blur-lg shadow-lg">
-            <p class="text-xs uppercase tracking-[0.2em] text-gray-500">Studio Snapshot</p>
-            <p class="mt-2 font-heading text-3xl text-gray-900">Live Atmosphäre</p>
+          <div
+            class="rounded-3xl border border-white/60 bg-white/60 p-6 backdrop-blur-lg shadow-lg"
+          >
+            <p class="text-xs uppercase tracking-[0.2em] text-gray-500">Training Snapshot</p>
+            <p class="mt-2 font-heading text-3xl text-gray-900">Fokussiert & persönlich</p>
             <p class="mt-2 text-sm text-gray-600">
-              Der Flau Studio Soundtrack wurde sorgfältig kuratiert, um eine ruhige und
-              fokussierte Trainingsumgebung zu schaffen.
+              Dein Training ist ruhig, klar strukturiert und ganz auf deine Haltung, Kraft und
+              Mobilität ausgerichtet.
             </p>
             <div class="mt-4 grid gap-2 text-xs text-gray-600 sm:grid-cols-2">
               <span class="rounded-full border border-white/70 bg-white/70 px-3 py-1">
-                Upbeat Vibes
+                1:1 Fokus
               </span>
               <span class="rounded-full border border-white/70 bg-white/70 px-3 py-1">
-                Weiches Licht
+                Cadillac Setup
               </span>
               <span class="rounded-full border border-white/70 bg-white/70 px-3 py-1">
-                Ruhiger Flow
+                Saubere Ausrichtung
               </span>
               <span class="rounded-full border border-white/70 bg-white/70 px-3 py-1">
-                Fokus &amp; Ruhe
+                Atem &amp; Kontrolle
               </span>
             </div>
           </div>
 
-          <div class="rounded-3xl border border-white/60 bg-white/60 p-6 backdrop-blur-lg shadow-lg">
-            <p class="text-xs uppercase tracking-[0.2em] text-gray-500">Diese Woche</p>
+          <div
+            class="rounded-3xl border border-white/60 bg-white/60 p-6 backdrop-blur-lg shadow-lg"
+          >
+            <p class="text-xs uppercase tracking-[0.2em] text-gray-500">Verfügbare Slots</p>
             <p class="mt-2 text-sm text-gray-600">
-              Frühklassen Mo/Do 07:30 · Abendkurse Di/Fr 18:00 · Weekend Flow Sa 10:00
+              Termine nach Vereinbarung in Berlin Mitte. Schreib mir für aktuelle Zeiten.
             </p>
           </div>
         </div>
@@ -92,10 +96,10 @@
   <Container>
     <div class="flex flex-col gap-8">
       <div>
-        <p class="text-sm uppercase tracking-[0.2em] text-gray-500">Studio Highlights</p>
+        <p class="text-sm uppercase tracking-[0.2em] text-gray-500">Training Highlights</p>
         <h2 class="mt-3 font-heading text-4xl text-gray-900">Was dich erwartet</h2>
         <p class="mt-3 max-w-2xl text-lg text-gray-600">
-          Dummy-Inhalte für Bildkacheln, die später mit echten Studio-Fotos ersetzt werden.
+          Schwerpunkte aus dem Cadillac Personal Training in Berlin.
         </p>
       </div>
 
@@ -106,10 +110,10 @@
             alt="Kursraum Placeholder"
             class="mb-4 w-full rounded-xl"
           />
-          <p class="text-sm text-gray-500">Reformer Space</p>
-          <p class="mt-2 font-heading text-2xl text-gray-900">Klar & ruhig</p>
+          <p class="text-sm text-gray-500">Cadillac Setup</p>
+          <p class="mt-2 font-heading text-2xl text-gray-900">Präzise Federnarbeit</p>
           <p class="mt-2 text-sm text-gray-600">
-            Fokus auf Atmung, Alignment und kontrollierte Sequenzen.
+            Saubere Linien, klare Range und geführtes Feedback am Cadillac.
           </p>
         </Card>
         <Card>
@@ -118,9 +122,11 @@
             alt="Coach Placeholder"
             class="mb-4 w-full rounded-xl"
           />
-          <p class="text-sm text-gray-500">Coaching</p>
+          <p class="text-sm text-gray-500">Personal Coaching</p>
           <p class="mt-2 font-heading text-2xl text-gray-900">Hands-on</p>
-          <p class="mt-2 text-sm text-gray-600">Präzise Korrekturen und klare Fortschrittsziele.</p>
+          <p class="mt-2 text-sm text-gray-600">
+            Präzise Korrekturen, angepasst an deinen Körper und Alltag.
+          </p>
         </Card>
         <Card>
           <img
@@ -128,11 +134,9 @@
             alt="Community Placeholder"
             class="mb-4 w-full rounded-xl"
           />
-          <p class="text-sm text-gray-500">Community</p>
-          <p class="mt-2 font-heading text-2xl text-gray-900">Small Groups</p>
-          <p class="mt-2 text-sm text-gray-600">
-            Maximal 8 Plätze für eine persönliche Trainingsumgebung.
-          </p>
+          <p class="text-sm text-gray-500">Individuelle Ziele</p>
+          <p class="mt-2 font-heading text-2xl text-gray-900">Fokus statt Gruppe</p>
+          <p class="mt-2 text-sm text-gray-600">Dein Tempo, dein Plan und dein Cadillac Flow.</p>
         </Card>
       </div>
     </div>
@@ -143,33 +147,33 @@
   <Container>
     <div class="grid gap-8 md:grid-cols-2 md:items-center">
       <div>
-        <p class="text-sm uppercase tracking-[0.2em] text-gray-500">Weekly Flow</p>
-        <h2 class="mt-3 font-heading text-4xl text-gray-900">Beispielplan (Dummy)</h2>
+        <p class="text-sm uppercase tracking-[0.2em] text-gray-500">Session Ablauf</p>
+        <h2 class="mt-3 font-heading text-4xl text-gray-900">So läuft eine Session ab</h2>
         <p class="mt-3 text-lg text-gray-600">
-          Dummy-Schedule mit Fokus auf wechselnde Intensitäten und Technik.
+          Beispielstruktur für eine 60-Minuten Einheit am Cadillac Reformer.
         </p>
       </div>
       <div class="grid gap-4">
         <Card>
           <div class="flex items-center justify-between">
-            <p class="text-sm text-gray-500">Montag</p>
-            <p class="text-sm font-medium text-gray-900">07:30</p>
+            <p class="text-sm text-gray-500">Ankommen</p>
+            <p class="text-sm font-medium text-gray-900">5-10 Min</p>
           </div>
-          <p class="mt-2 font-heading text-2xl text-gray-900">Foundation Flow</p>
+          <p class="mt-2 font-heading text-2xl text-gray-900">Check-in & Zielsetzung</p>
         </Card>
         <Card>
           <div class="flex items-center justify-between">
-            <p class="text-sm text-gray-500">Mittwoch</p>
-            <p class="text-sm font-medium text-gray-900">18:00</p>
+            <p class="text-sm text-gray-500">Hauptteil</p>
+            <p class="text-sm font-medium text-gray-900">40 Min</p>
           </div>
-          <p class="mt-2 font-heading text-2xl text-gray-900">Strength & Core</p>
+          <p class="mt-2 font-heading text-2xl text-gray-900">Cadillac Flow</p>
         </Card>
         <Card>
           <div class="flex items-center justify-between">
-            <p class="text-sm text-gray-500">Freitag</p>
-            <p class="text-sm font-medium text-gray-900">19:30</p>
+            <p class="text-sm text-gray-500">Ausklang</p>
+            <p class="text-sm font-medium text-gray-900">10 Min</p>
           </div>
-          <p class="mt-2 font-heading text-2xl text-gray-900">Precision Lab</p>
+          <p class="mt-2 font-heading text-2xl text-gray-900">Integration & Stretch</p>
         </Card>
       </div>
     </div>

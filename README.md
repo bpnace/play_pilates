@@ -1,4 +1,4 @@
-# Play Pilates – Code Dokumentation
+# Nina Untch Pilates – Code Dokumentation
 
 Diese README beschreibt ausschließlich den aktuellen Code-Stand, Struktur und relevante Konventionen.
 Die Roadmap liegt in `dev_plan.md`.

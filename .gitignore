@@ -34,6 +34,7 @@ coverage
 playwright-report
 test-results
 dev_plan.md
+/tests*
 
 # Cache
 .eslintcache

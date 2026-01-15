@@ -1,16 +1,15 @@
 export const site = {
-  name: 'Play Pilates',
-  description: 'Reformer Pilates Studio – modern, klar, effektiv.',
+  name: 'Nina Untch Pilates',
+  description: 'Personal Training fuer Cadillac Reformer in Berlin.',
   nav: [
     { label: 'Start', href: '/' },
-    { label: 'Kurse', href: '/kurse' },
-    { label: 'Über uns', href: '/ueber-uns' },
-    { label: 'Preise', href: '/preise' },
+    { label: 'Der CADILLAC', href: '/cadillac' },
+    { label: 'About', href: '/about' },
     { label: 'Kontakt', href: '/kontakt' },
   ],
   footer: {
-    email: 'hello@playpilates.example',
+    email: 'hello@ninauntchpilates.de',
     phone: '+49 30 123 456 78',
-    address: 'Studio Straße 12, 10115 Berlin',
+    address: 'Berlin Mitte, 10115 Berlin',
   },
 } as const;

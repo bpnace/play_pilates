@@ -9,9 +9,9 @@
     <div class="flex flex-col gap-8">
       <div>
         <p class="text-sm uppercase tracking-[0.2em] text-gray-500">Blog</p>
-        <h1 class="mt-3 font-heading text-5xl text-gray-900">Insights & Studio Notes</h1>
+        <h1 class="mt-3 font-heading text-5xl text-gray-900">Insights & Training Notes</h1>
         <p class="mt-3 max-w-2xl text-lg text-gray-600">
-          Dummy-Inhalt: Artikelübersicht mit Teasern. Inhalte kommen später aus dem CMS.
+          Dummy-Inhalt: Artikeluebersicht mit Teasern. Inhalte kommen spaeter aus dem CMS.
         </p>
       </div>
 
@@ -28,8 +28,10 @@
         </Card>
         <Card>
           <p class="text-xs text-gray-500">02. Jan</p>
-          <p class="mt-2 font-heading text-2xl text-gray-900">Class Formats</p>
-          <p class="mt-2 text-sm text-gray-600">Dummy-Text zu Formaten, Leveln und Progression.</p>
+          <p class="mt-2 font-heading text-2xl text-gray-900">Session Flow</p>
+          <p class="mt-2 text-sm text-gray-600">
+            Dummy-Text zu Ablauf, Fokus und Progression.
+          </p>
         </Card>
       </div>
     </div>
