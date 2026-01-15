@@ -7,11 +7,16 @@
 </script>
 
 <Section>
-  <Container>
+  <Container maxWidth="full">
     <div class="relative overflow-hidden rounded-2xl border border-white/40 bg-white/20 shadow-xl">
+      <img
+        class="absolute z-20 max-w-30 drop-shadow-xl"
+        src={asset('/images/hero/NUP_LOGO5png.png')}
+        alt="Nina Untch Pilates Logo"
+      />
       <video
         class="absolute inset-0 h-full w-full object-cover"
-        src={asset('/images/hero/heroPilates2.webm')}
+        src={asset('/images/hero/heroPilates1.webm')}
         autoplay
         loop
         muted
@@ -22,7 +27,7 @@
       ></video>
       <div class="absolute inset-0 bg-white/35 backdrop-blur-md"></div>
 
-      <div class="relative z-10 grid gap-10 p-8 md:grid-cols-2 md:items-center md:p-12">
+      <div class="relative z-10 grid gap-10 p-8 pt-28 md:grid-cols-2 md:items-center md:p-12 md:pt-32">
         <div class="rounded-3xl border border-white/70 bg-white/70 p-6 backdrop-blur-xl shadow-lg">
           <p class="text-sm uppercase tracking-[0.2em] text-gray-500">Cadillac Reformer Training</p>
           <h1 class="mt-4 font-heading text-5xl text-gray-900 md:text-6xl">
