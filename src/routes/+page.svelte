@@ -23,20 +23,19 @@
 
       <div class="relative z-10 flex min-h-screen items-end px-4 pt-4 md:items-center md:px-6 md:pt-6">
         <div
-          class="w-[92%] pb-12 pl-6 pt-24 text-left md:w-[60%] md:pb-16 md:pl-12 md:pt-32 lg:w-[45%] lg:pl-16"
+          class="w-[92%] pb-12 pl-6 pt-24 text-left md:w-[60%] md:pb-16 md:pl-12 md:pt-32 lg:pl-16"
         >
-          <p class="text-xs uppercase tracking-[1.25em] text-gray-600 md:text-sm">
+          <p class="text-xs uppercase w-full tracking-[1.25em] text-gray-600 md:text-sm">
             Cadillac Reformer Training
           </p>
-          <h1 class="mt-9 text-4xl font-black uppercase sm:text-5xl md:text-6xl lg:text-9xl">
-            <span class="block leading-[0.8]">Stärke.</span>
-            <span class="block leading-[0.8]">Haltung.</span>
-            <span class="block leading-[0.8]">Fokus.</span>
+          <h1 class="mt-9 text-4xl  uppercase sm:text-5xl md:text-6xl lg:text-9xl">
+            <span class="block font-regular leading-[0.75]">Stärke</span>
+            <span class="block font-bold leading-[0.75]">Haltung</span>
+            <span class="block font-black leading-[0.75]">Fokus</span>
           </h1>
           <div class="mt-6 text-gray-600 gap-1 text-base md:text-lg">
             <p>Individuelle Cadillac Reformer Sessions in Berlin.</p>
-            <p>Praezise Betreuung, klare Struktur, volle Aufmerksamkeit.</p>
-            <p>Roh. Direkt. 1:1 an deinen Zielen.</p>
+            <p>Präzise Betreuung, klare Struktur, volle Aufmerksamkeit.</p>
           </div>
         </div>
       </div>
