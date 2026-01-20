@@ -14,7 +14,7 @@
     <div class="flex items-center justify-between py-4">
       <a href={resolve('/' as Pathname)} class="flex items-center gap-3">
         <img
-          src={asset('/images/playLogo1.svg')}
+          src={asset('/images/ninaLogo1.webp')}
           alt="Nina Untch Pilates Logo"
           class="h-10 w-10"
         />

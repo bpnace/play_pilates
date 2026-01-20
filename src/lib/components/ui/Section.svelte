@@ -5,7 +5,7 @@
     children,
   } = $props<{
     background?: 'white' | 'gray' | 'black' | 'primary';
-    paddingY?: 'sm' | 'md' | 'lg' | 'xl';
+    paddingY?: 'none' | 'sm' | 'md' | 'lg' | 'xl';
     children?: import('svelte').Snippet;
   }>();
 
@@ -17,6 +17,7 @@
   };
 
   const paddingClasses: Record<string, string> = {
+    none: 'py-0',
     sm: 'py-8 sm:py-12',
     md: 'py-12 sm:py-16',
     lg: 'py-16 sm:py-24',

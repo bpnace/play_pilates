@@ -2,21 +2,15 @@
   import { asset } from '$app/paths';
   import Container from '$lib/components/ui/Container.svelte';
   import Section from '$lib/components/ui/Section.svelte';
-  import Button from '$lib/components/ui/Button.svelte';
   import Card from '$lib/components/ui/Card.svelte';
 </script>
 
-<Section>
-  <Container maxWidth="full">
-    <div class="relative overflow-hidden rounded-2xl border border-white/40 bg-white/20 shadow-xl">
-      <img
-        class="absolute z-20 max-w-30 drop-shadow-xl"
-        src={asset('/images/hero/NUP_LOGO5png.png')}
-        alt="Nina Untch Pilates Logo"
-      />
+<Section paddingY="none">
+  <Container maxWidth="full" noPadding>
+    <div class="relative min-h-[70vh] w-full overflow-hidden bg-black md:min-h-[85vh] lg:min-h-[90vh]">
       <video
         class="absolute inset-0 h-full w-full object-cover"
-        src={asset('/images/hero/heroPilates1.webm')}
+        src={asset('/images/hero/heroPilates2.webm')}
         autoplay
         loop
         muted
@@ -25,71 +19,22 @@
         aria-hidden="true"
         tabindex="-1"
       ></video>
-      <div class="absolute inset-0 bg-white/35 backdrop-blur-md"></div>
+      <div class="absolute inset-0 bg-black/45 backdrop-blur-sm"></div>
 
-      <div class="relative z-10 grid gap-10 p-8 pt-28 md:grid-cols-2 md:items-center md:p-12 md:pt-32">
-        <div class="rounded-3xl border border-white/70 bg-white/70 p-6 backdrop-blur-xl shadow-lg">
-          <p class="text-sm uppercase tracking-[0.2em] text-gray-500">Cadillac Reformer Training</p>
-          <h1 class="mt-4 font-heading text-5xl text-gray-900 md:text-6xl">
-            Stärke, Haltung und Fokus im Personal Training
-          </h1>
-          <p class="mt-4 text-lg text-gray-600">
-            Individuelle Cadillac Reformer Sessions in Berlin. Praezise Betreuung, klare Struktur
-            und volle Aufmerksamkeit für deine Ziele.
+      <div class="relative z-10 flex h-full items-end md:items-center">
+        <div
+          class="w-[92%] pb-12 pl-6 pt-24 text-left md:w-[60%] md:pb-16 md:pl-12 md:pt-32 lg:w-[45%] lg:pl-16"
+        >
+          <p class="text-xs uppercase tracking-[1.25em] text-gray-600 md:text-sm">
+            Cadillac Reformer Training
           </p>
-          <div class="mt-6 flex flex-wrap gap-3">
-            <Button href="/cadillac">Der CADILLAC</Button>
-            <Button variant="secondary" href="/kontakt">Session anfragen</Button>
-          </div>
-          <div class="mt-6 flex flex-wrap gap-6 text-sm text-gray-500">
-            <div>
-              <p class="font-heading text-2xl text-gray-900">1:1</p>
-              <p>Persönliche Betreuung</p>
-            </div>
-            <div>
-              <p class="font-heading text-2xl text-gray-900">60</p>
-              <p>Minuten pro Session</p>
-            </div>
-            <div>
-              <p class="font-heading text-2xl text-gray-900">Berlin</p>
-              <p>Cadillac Reformer</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid gap-4">
-          <div
-            class="rounded-3xl border border-white/60 bg-white/60 p-6 backdrop-blur-lg shadow-lg"
-          >
-            <p class="text-xs uppercase tracking-[0.2em] text-gray-500">Training Snapshot</p>
-            <p class="mt-2 font-heading text-3xl text-gray-900">Fokussiert & persönlich</p>
-            <p class="mt-2 text-sm text-gray-600">
-              Dein Training ist ruhig, klar strukturiert und ganz auf deine Haltung, Kraft und
-              Mobilität ausgerichtet.
-            </p>
-            <div class="mt-4 grid gap-2 text-xs text-gray-600 sm:grid-cols-2">
-              <span class="rounded-full border border-white/70 bg-white/70 px-3 py-1">
-                1:1 Fokus
-              </span>
-              <span class="rounded-full border border-white/70 bg-white/70 px-3 py-1">
-                Cadillac Setup
-              </span>
-              <span class="rounded-full border border-white/70 bg-white/70 px-3 py-1">
-                Saubere Ausrichtung
-              </span>
-              <span class="rounded-full border border-white/70 bg-white/70 px-3 py-1">
-                Atem &amp; Kontrolle
-              </span>
-            </div>
-          </div>
-
-          <div
-            class="rounded-3xl border border-white/60 bg-white/60 p-6 backdrop-blur-lg shadow-lg"
-          >
-            <p class="text-xs uppercase tracking-[0.2em] text-gray-500">Verfügbare Slots</p>
-            <p class="mt-2 text-sm text-gray-600">
-              Termine nach Vereinbarung in Berlin Mitte. Schreib mir für aktuelle Zeiten.
-            </p>
+          <h1 class="mt-2 font-heading text-4xl font-black uppercase leading-[0.45] sm:text-5xl md:text-6xl lg:text-9xl">
+            Stärke. Haltung. Fokus.
+          </h1>
+          <div class="mt-6 text-gray-600 gap-1 text-base md:text-lg">
+            <p>Individuelle Cadillac Reformer Sessions in Berlin.</p>
+            <p>Praezise Betreuung, klare Struktur, volle Aufmerksamkeit.</p>
+            <p>Roh. Direkt. 1:1 an deinen Zielen.</p>
           </div>
         </div>
       </div>
@@ -97,7 +42,7 @@
   </Container>
 </Section>
 
-<Section background="gray">
+<Section background="dark">
   <Container>
     <div class="flex flex-col gap-8">
       <div>
@@ -111,7 +56,7 @@
       <div class="grid gap-6 md:grid-cols-3">
         <Card>
           <img
-            src={asset('/images/hero/hero-2.svg')}
+            src={asset('/images/info/platzhalter.webp')}
             alt="Kursraum Placeholder"
             class="mb-4 w-full rounded-xl"
           />
@@ -123,7 +68,7 @@
         </Card>
         <Card>
           <img
-            src={asset('/images/hero/hero-3.svg')}
+            src={asset('/images/info/platzhalter.webp')}
             alt="Coach Placeholder"
             class="mb-4 w-full rounded-xl"
           />
@@ -135,7 +80,7 @@
         </Card>
         <Card>
           <img
-            src={asset('/images/hero/hero-2.svg')}
+            src={asset('/images/info/platzhalter.webp')}
             alt="Community Placeholder"
             class="mb-4 w-full rounded-xl"
           />

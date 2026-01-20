@@ -42,7 +42,7 @@
         <div class="grid gap-4">
           <Card>
             <img
-              src={asset('/images/hero/hero-1.svg')}
+              src={asset('/images/info/platzhalter.webp')}
               alt="Cadillac Apparat"
               class="mb-4 w-full rounded-xl"
             />
