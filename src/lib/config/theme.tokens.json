@@ -55,8 +55,8 @@
     "white": "#1F2937"
   },
   "fonts": {
-    "heading": "'Mulish', 'Helvetica Neue', Arial, sans-serif",
-    "body": "'Mulish', 'Helvetica Neue', Arial, sans-serif"
+    "heading": "'Mulish', Arial, sans-serif",
+    "body": "'Mulish', Arial, sans-serif"
   },
   "radii": {
     "sm": "0.125rem",

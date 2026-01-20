@@ -7,7 +7,7 @@
 
 <Section paddingY="none">
   <Container maxWidth="full" noPadding>
-    <div class="relative min-h-[70vh] w-full overflow-hidden bg-black md:min-h-[85vh] lg:min-h-[90vh]">
+    <div class="relative min-h-screen overflow-hidden bg-black">
       <video
         class="absolute inset-0 h-full w-full object-cover"
         src={asset('/images/hero/heroPilates2.webm')}
@@ -21,15 +21,17 @@
       ></video>
       <div class="absolute inset-0 bg-black/45 backdrop-blur-sm"></div>
 
-      <div class="relative z-10 flex h-full items-end md:items-center">
+      <div class="relative z-10 flex min-h-screen items-end px-4 pt-4 md:items-center md:px-6 md:pt-6">
         <div
           class="w-[92%] pb-12 pl-6 pt-24 text-left md:w-[60%] md:pb-16 md:pl-12 md:pt-32 lg:w-[45%] lg:pl-16"
         >
           <p class="text-xs uppercase tracking-[1.25em] text-gray-600 md:text-sm">
             Cadillac Reformer Training
           </p>
-          <h1 class="mt-2 font-heading text-4xl font-black uppercase leading-[0.45] sm:text-5xl md:text-6xl lg:text-9xl">
-            Stärke. Haltung. Fokus.
+          <h1 class="mt-9 text-4xl font-black uppercase sm:text-5xl md:text-6xl lg:text-9xl">
+            <span class="block leading-[0.8]">Stärke.</span>
+            <span class="block leading-[0.8]">Haltung.</span>
+            <span class="block leading-[0.8]">Fokus.</span>
           </h1>
           <div class="mt-6 text-gray-600 gap-1 text-base md:text-lg">
             <p>Individuelle Cadillac Reformer Sessions in Berlin.</p>
@@ -42,7 +44,7 @@
   </Container>
 </Section>
 
-<Section background="dark">
+<Section background="gray">
   <Container>
     <div class="flex flex-col gap-8">
       <div>

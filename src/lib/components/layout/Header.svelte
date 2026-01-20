@@ -9,9 +9,11 @@
   let open = false;
 </script>
 
-<header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-gray-100">
-  <Container>
-    <div class="flex items-center justify-between py-4">
+<header class="fixed left-0 right-0 top-4 z-50">
+  <Container maxWidth="full" noPadding>
+    <div
+      class="mx-auto flex w-[94%] max-w-7xl items-center justify-between rounded-full border border-white/40 bg-white/85 px-4 py-3 shadow-xl backdrop-blur-md md:px-6"
+    >
       <a href={resolve('/' as Pathname)} class="flex items-center gap-3">
         <img
           src={asset('/images/ninaLogo1.webp')}
@@ -37,7 +39,7 @@
         </button>
       </div>
     </div>
-    <div class="relative md:hidden">
+    <div class="relative mt-3 md:hidden">
       <MobileMenu {open} />
     </div>
   </Container>
