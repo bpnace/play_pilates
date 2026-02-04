@@ -1,132 +1,185 @@
 <script lang="ts">
   import { asset } from '$app/paths';
   import Container from '$lib/components/ui/Container.svelte';
-  import Section from '$lib/components/ui/Section.svelte';
-  import Card from '$lib/components/ui/Card.svelte';
+  import Button from '$lib/components/ui/Button.svelte';
+
+  const highlights = [
+    {
+      title: 'Praezise Federnarbeit',
+      meta: 'Cadillac Setup',
+      time: '60 Min',
+      desc: 'Saubere Linien, klare Range und gefuehrtes Feedback am Cadillac Reformer.',
+    },
+    {
+      title: 'Hands-on Coaching',
+      meta: 'Personal Training',
+      time: '1:1 Fokus',
+      desc: 'Feine Korrekturen, angepasst an deinen Koerper, deine Ziele und deinen Alltag.',
+    },
+    {
+      title: 'Individuelle Ziele',
+      meta: 'Progression',
+      time: 'Woche fuer Woche',
+      desc: 'Du trainierst ohne Gruppendruck und bleibst in einem Tempo, das zu dir passt.',
+    },
+  ];
+
+  const flow = [
+    {
+      time: '5-10 Min',
+      title: 'Check-in & Zielsetzung',
+      desc: 'Kurzer Status, Atem, Beweglichkeit, danach setzen wir den Fokus der Session.',
+    },
+    {
+      time: '40 Min',
+      title: 'Cadillac Flow',
+      desc: 'Gefuehrte Sequenzen fuer Kraft, Kontrolle und saubere Gelenkachsen.',
+    },
+    {
+      time: '10 Min',
+      title: 'Integration & Stretch',
+      desc: 'Ausklang mit Mobilisation und ruhigem Stretch fuer ein klares Koerpergefuehl.',
+    },
+  ];
+
+  const metrics = [
+    { value: '1:1', label: 'Betreuung' },
+    { value: '60', label: 'Minuten' },
+    { value: 'Berlin', label: 'Studio' },
+  ];
 </script>
 
-<Section paddingY="none">
-  <Container maxWidth="full" noPadding>
-    <div class="relative min-h-screen overflow-hidden bg-black">
-      <video
-        class="absolute inset-0 h-full w-full object-cover"
-        src={asset('/images/hero/heroPilates2.webm')}
-        autoplay
-        loop
-        muted
-        playsinline
-        preload="metadata"
-        aria-hidden="true"
-        tabindex="-1"
-      ></video>
-      <div class="absolute inset-0 bg-black/45 backdrop-blur-sm"></div>
+<section class="hero">
+  <div class="hero__wash"></div>
+  <div class="hero__grain grain-overlay"></div>
 
-      <div class="relative z-10 flex min-h-screen items-end px-4 pt-4 md:items-center md:px-6 md:pt-6">
-        <div
-          class="w-[92%] pb-12 pl-6 pt-24 text-left md:w-[60%] md:pb-16 md:pl-12 md:pt-32 lg:pl-16"
-        >
-          <p class="text-xs uppercase w-full tracking-[1.25em] text-gray-600 md:text-sm">
-            Cadillac Reformer Training
-          </p>
-          <h1 class="mt-9 text-4xl  uppercase sm:text-5xl md:text-6xl lg:text-9xl">
-            <span class="block font-regular leading-[0.75]">Stärke</span>
-            <span class="block font-bold leading-[0.75]">Haltung</span>
-            <span class="block font-black leading-[0.75]">Fokus</span>
-          </h1>
-          <div class="mt-6 text-gray-600 gap-1 text-base md:text-lg">
-            <p>Individuelle Cadillac Reformer Sessions in Berlin.</p>
-            <p>Präzise Betreuung, klare Struktur, volle Aufmerksamkeit.</p>
+  <Container maxWidth="full" noPadding>
+    <div class="hero__inner">
+      <div class="hero__content">
+        <div class="flex flex-wrap items-center gap-4">
+          <span class="ui-micro text-gray-700">Cadillac Reformer</span>
+          <span class="ui-micro text-gray-700">Berlin Wilmerfsdorf</span>
+        </div>
+
+        <div class="hero__mask" aria-hidden="true">
+          <div class="hero__mask-media">
+            <video
+              class="hero__mask-video"
+              src={asset('/images/hero/heroPilates2.webm')}
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="metadata"
+              aria-hidden="true"
+              tabindex="-1"
+            ></video>
           </div>
+          <div class="hero__mask-fallback">
+            <span>Nina</span>
+            <span>Untch</span>
+          </div>
+        </div>
+        <h1 class="sr-only">Nina Untch Pilates</h1>
+        <div class="hero__title-sub chrome-text">Pilates</div>
+
+        <p class="hero__lede">
+          Individuelle Cadillac Reformer Sessions in Berlin. Praezise Betreuung, klare Struktur,
+          volle Aufmerksamkeit.
+        </p>
+
+        <div class="hero__cta">
+          <Button href="/kontakt">Probestunde</Button>
+          <Button variant="secondary" href="/cadillac">Cadillac Training</Button>
+        </div>
+      </div>
+
+      <div class="hero__blur chrome-border">
+        <p class="ui-micro text-gray-700">Session Profil</p>
+        <p class="hero__panel-title">60 Min · 1:1</p>
+        <p class="hero__panel-text">
+          Ruhig, praezise, technisch. Wir arbeiten am Cadillac fuer Kraft, Haltung und Fokus.
+        </p>
+        <div class="ui-divider mt-6"></div>
+        <div class="hero__panel-metrics">
+          {#each metrics as metric (metric.label)}
+            <div>
+              <p class="hero__metric-value">{metric.value}</p>
+              <p class="ui-micro text-[0.55rem] text-gray-700">{metric.label}</p>
+            </div>
+          {/each}
         </div>
       </div>
     </div>
   </Container>
-</Section>
+</section>
 
-<Section background="gray">
+<section class="section-editorial">
   <Container>
-    <div class="flex flex-col gap-8">
+    <div class="flex flex-col gap-6">
       <div>
-        <p class="text-sm uppercase tracking-[0.2em] text-gray-500">Training Highlights</p>
-        <h2 class="mt-3 font-heading text-4xl text-gray-900">Was dich erwartet</h2>
-        <p class="mt-3 max-w-2xl text-lg text-gray-600">
-          Schwerpunkte aus dem Cadillac Personal Training in Berlin.
+        <p class="ui-micro text-gray-700">Training Highlights</p>
+        <h2 class="editorial-heading ui-outline">Highlights</h2>
+        <p class="mt-3 max-w-2xl text-sm text-gray-700">
+          Schwerpunkte aus dem Cadillac Personal Training in Berlin. Klar strukturiert, ohne
+          Ablenkung.
         </p>
       </div>
 
-      <div class="grid gap-6 md:grid-cols-3">
-        <Card>
-          <img
-            src={asset('/images/info/platzhalter.webp')}
-            alt="Kursraum Placeholder"
-            class="mb-4 w-full rounded-xl"
-          />
-          <p class="text-sm text-gray-500">Cadillac Setup</p>
-          <p class="mt-2 font-heading text-2xl text-gray-900">Präzise Federnarbeit</p>
-          <p class="mt-2 text-sm text-gray-600">
-            Saubere Linien, klare Range und geführtes Feedback am Cadillac.
-          </p>
-        </Card>
-        <Card>
-          <img
-            src={asset('/images/info/platzhalter.webp')}
-            alt="Coach Placeholder"
-            class="mb-4 w-full rounded-xl"
-          />
-          <p class="text-sm text-gray-500">Personal Coaching</p>
-          <p class="mt-2 font-heading text-2xl text-gray-900">Hands-on</p>
-          <p class="mt-2 text-sm text-gray-600">
-            Präzise Korrekturen, angepasst an deinen Körper und Alltag.
-          </p>
-        </Card>
-        <Card>
-          <img
-            src={asset('/images/info/platzhalter.webp')}
-            alt="Community Placeholder"
-            class="mb-4 w-full rounded-xl"
-          />
-          <p class="text-sm text-gray-500">Individuelle Ziele</p>
-          <p class="mt-2 font-heading text-2xl text-gray-900">Fokus statt Gruppe</p>
-          <p class="mt-2 text-sm text-gray-600">Dein Tempo, dein Plan und dein Cadillac Flow.</p>
-        </Card>
+      <div class="editorial-list">
+        {#each highlights as item (item.title)}
+          <div class="editorial-item">
+            <div>
+              <p class="editorial-title">{item.title}</p>
+              <p class="editorial-meta">{item.meta} · {item.time}</p>
+            </div>
+            <p class="editorial-desc">{item.desc}</p>
+          </div>
+        {/each}
       </div>
     </div>
   </Container>
-</Section>
+</section>
 
-<Section>
+<section class="section-editorial section-editorial--alt">
   <Container>
-    <div class="grid gap-8 md:grid-cols-2 md:items-center">
+    <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
       <div>
-        <p class="text-sm uppercase tracking-[0.2em] text-gray-500">Session Ablauf</p>
-        <h2 class="mt-3 font-heading text-4xl text-gray-900">So läuft eine Session ab</h2>
-        <p class="mt-3 text-lg text-gray-600">
-          Beispielstruktur für eine 60-Minuten Einheit am Cadillac Reformer.
+        <p class="ui-micro text-gray-700">Session Ablauf</p>
+        <h2 class="editorial-heading">Ablauf</h2>
+        <p class="mt-3 text-sm text-gray-700">
+          Beispielstruktur fuer eine 60-Minuten Einheit am Cadillac Reformer.
         </p>
       </div>
-      <div class="grid gap-4">
-        <Card>
-          <div class="flex items-center justify-between">
-            <p class="text-sm text-gray-500">Ankommen</p>
-            <p class="text-sm font-medium text-gray-900">5-10 Min</p>
+
+      <div class="timeline">
+        {#each flow as step (step.title)}
+          <div class="timeline-item">
+            <p class="timeline-time">{step.time}</p>
+            <p class="timeline-title">{step.title}</p>
+            <p class="text-sm text-gray-700">{step.desc}</p>
           </div>
-          <p class="mt-2 font-heading text-2xl text-gray-900">Check-in & Zielsetzung</p>
-        </Card>
-        <Card>
-          <div class="flex items-center justify-between">
-            <p class="text-sm text-gray-500">Hauptteil</p>
-            <p class="text-sm font-medium text-gray-900">40 Min</p>
-          </div>
-          <p class="mt-2 font-heading text-2xl text-gray-900">Cadillac Flow</p>
-        </Card>
-        <Card>
-          <div class="flex items-center justify-between">
-            <p class="text-sm text-gray-500">Ausklang</p>
-            <p class="text-sm font-medium text-gray-900">10 Min</p>
-          </div>
-          <p class="mt-2 font-heading text-2xl text-gray-900">Integration & Stretch</p>
-        </Card>
+        {/each}
       </div>
     </div>
   </Container>
-</Section>
+</section>
+
+<section class="section-editorial">
+  <Container>
+    <div class="cta-panel chrome-border">
+      <div>
+        <p class="ui-micro text-gray-700">Bereit fuer deine Session?</p>
+        <h2 class="editorial-heading chrome-text">Start</h2>
+        <p class="mt-3 max-w-xl text-sm text-gray-700">
+          Lass uns wissen, welche Ziele du hast. Ich empfehle dir das passende Format und die
+          richtige Intensitaet.
+        </p>
+      </div>
+      <div class="hero__cta">
+        <Button href="/kontakt">Session anfragen</Button>
+        <Button variant="secondary" href="/preise">Preise ansehen</Button>
+      </div>
+    </div>
+  </Container>
+</section>

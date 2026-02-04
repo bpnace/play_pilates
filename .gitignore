@@ -7,6 +7,7 @@ node_modules
 .wrangler
 /.svelte-kit
 /build
+content/
 
 # OS
 .DS_Store
@@ -34,7 +35,7 @@ coverage
 playwright-report
 test-results
 dev_plan.md
-/tests*
+tests/*
 
 # Cache
 .eslintcache

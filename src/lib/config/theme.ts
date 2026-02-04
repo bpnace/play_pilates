@@ -26,6 +26,7 @@ export type ThemeTokens = {
   fonts: {
     heading: string;
     body: string;
+    mono: string;
   };
   radii: {
     sm: string;

@@ -26,8 +26,8 @@
   <Container>
     <div class="flex flex-col gap-8">
       <div>
-        <p class="text-sm uppercase tracking-[0.2em] text-gray-500">Über mich</p>
-        <h1 class="mt-3 font-heading text-5xl text-gray-900">Personal Training</h1>
+        <p class="ui-micro text-xs text-gray-700">Ueber mich</p>
+        <h1 class="mt-3 font-heading text-5xl text-gray-900 chrome-text">Personal Training</h1>
         <p class="mt-3 max-w-2xl text-lg text-gray-600">
           Persönliches Cadillac Reformer Training in Berlin, klar strukturiert und auf dich
           ausgerichtet.
@@ -40,9 +40,9 @@
             <img
               src={member.image}
               alt={`${member.name} Profilbild`}
-              class="h-56 w-full rounded-xl border border-gray-200 object-cover"
+              class="h-56 w-full rounded-xl border border-white/10 object-cover"
             />
-            <p class="mt-4 text-sm uppercase tracking-[0.2em] text-gray-500">{member.role}</p>
+            <p class="mt-4 ui-micro text-xs text-gray-700">{member.role}</p>
             <p class="mt-2 font-heading text-2xl text-gray-900">{member.name}</p>
             <p class="mt-2 text-sm text-gray-600">{member.focus}</p>
             <p class="mt-3 text-sm text-gray-500">{member.bio}</p>
@@ -52,21 +52,21 @@
 
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {#each stats as stat (stat.label)}
-          <div class="rounded-2xl border border-gray-200 bg-white p-6 text-center shadow-sm">
-            <p class="font-heading text-3xl text-gray-900">{stat.value}</p>
+          <div class="ui-panel rounded-2xl p-6 text-center">
+            <p class="font-heading text-3xl text-gray-900 chrome-text">{stat.value}</p>
             <p class="mt-2 text-sm text-gray-500">{stat.label}</p>
           </div>
         {/each}
       </div>
 
-      <div class="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
+      <div class="ui-panel chrome-border rounded-2xl p-8">
         <img
           src={asset('/images/team/about-1.svg')}
           alt="Trainerin Story Placeholder"
-          class="mb-6 w-full rounded-2xl border border-gray-200 md:float-right md:mb-4 md:ml-6 md:w-72"
+          class="mb-6 w-full rounded-2xl border border-white/10 md:float-right md:mb-4 md:ml-6 md:w-72"
         />
-        <p class="text-sm uppercase tracking-[0.2em] text-gray-500">Arbeitsweise</p>
-        <h2 class="mt-3 font-heading text-4xl text-gray-900">Mein Ansatz</h2>
+        <p class="ui-micro text-xs text-gray-700">Arbeitsweise</p>
+        <h2 class="mt-3 font-heading text-4xl text-gray-900 chrome-text">Mein Ansatz</h2>
         <p class="mt-3 text-lg text-gray-600">
           Nina Untch Pilates steht fuer persoenliches Cadillac Reformer Training in Berlin. Ich
           arbeite 1:1, ruhig und praezise, damit du Kraft, Mobilitaet und Kontrolle aufbauen

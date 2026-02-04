@@ -11,11 +11,7 @@
   {#each site.nav as item (item.href)}
     {@const isActive = item.href === (activeHref ?? $page.url.pathname)}
     <a
-      class={`text-sm font-medium transition-colors duration-fast ease-smooth ${
-        isActive
-          ? 'text-gray-900 underline decoration-primary-500 underline-offset-8'
-          : 'text-gray-700 hover:underline hover:decoration-gray-300 underline-offset-8'
-      }`}
+      class={`ui-nav-link transition-colors duration-fast ease-smooth ${isActive ? 'is-active' : ''}`}
       href={resolve(item.href as Pathname)}
       aria-current={isActive ? 'page' : undefined}
     >

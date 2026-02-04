@@ -16,6 +16,7 @@ module.exports = {
       fontFamily: {
         heading: [tokens.fonts.heading],
         body: [tokens.fonts.body],
+        mono: [tokens.fonts.mono],
       },
       borderRadius: tokens.radii,
       boxShadow: tokens.shadows,

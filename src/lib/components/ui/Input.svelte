@@ -20,11 +20,11 @@
 
 <label class="block space-y-2">
   {#if label}
-    <span class="text-sm font-medium text-gray-700">{label}</span>
+    <span class="text-sm font-medium text-gray-300">{label}</span>
   {/if}
   <input
     {id}
-    class="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-gray-900 placeholder:text-gray-400 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 disabled:opacity-60"
+    class="ui-input focus:border-primary-500 focus:ring-2 focus:ring-primary-200 disabled:opacity-60"
     {type}
     {placeholder}
     {value}

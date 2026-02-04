@@ -8,7 +8,7 @@
 </script>
 
 <div
-  class={`absolute left-0 right-0 top-full origin-top rounded-2xl border border-gray-200 bg-white shadow-lg transition ${
+  class={`absolute left-0 right-0 top-full origin-top rounded-2xl border border-white/10 bg-[rgba(10,10,10,0.85)] shadow-xl backdrop-blur-md transition ${
     open ? 'scale-100 opacity-100' : 'pointer-events-none scale-95 opacity-0'
   }`}
 >
@@ -16,10 +16,8 @@
     {#each site.nav as item (item.href)}
       {@const isActive = item.href === (activeHref ?? $page.url.pathname)}
       <a
-        class={`text-base font-medium ${
-          isActive
-            ? 'text-gray-900 underline decoration-primary-500 underline-offset-8'
-            : 'text-gray-700 hover:underline hover:decoration-gray-300 underline-offset-8'
+        class={`text-lg font-heading uppercase tracking-[0.22em] ${
+          isActive ? 'text-gray-900' : 'text-gray-700 hover:text-gray-900'
         }`}
         href={resolve(item.href as Pathname)}
         aria-current={isActive ? 'page' : undefined}

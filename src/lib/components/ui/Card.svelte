@@ -11,6 +11,6 @@
   };
 </script>
 
-<div class={`rounded-xl border border-gray-200 bg-white shadow-sm ${paddingClasses[padding]}`}>
+<div class={`ui-panel rounded-2xl ${paddingClasses[padding]}`}>
   {@render children?.()}
 </div>

@@ -21,20 +21,19 @@
   }>();
 
   const baseClasses =
-    'inline-flex items-center justify-center font-medium transition-all duration-normal ease-smooth focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:opacity-60 disabled:pointer-events-none';
+    'ui-button focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:opacity-60 disabled:pointer-events-none';
 
   const variantClasses: Record<string, string> = {
-    primary: 'bg-primary text-gray-900 hover:bg-primary-600 active:bg-primary-700',
-    secondary:
-      'border border-primary text-primary hover:bg-primary hover:text-gray-900 active:bg-primary-700',
-    ghost: 'text-gray-700 hover:bg-gray-100',
-    link: 'text-primary hover:text-primary-700 underline-offset-4 hover:underline',
+    primary: 'ui-button--accent',
+    secondary: 'ui-button--outline',
+    ghost: 'ui-button--ghost',
+    link: 'ui-button--link',
   };
 
   const sizeClasses: Record<string, string> = {
-    sm: 'text-sm px-3 py-2 rounded-md',
-    md: 'text-base px-4 py-2.5 rounded-lg',
-    lg: 'text-lg px-5 py-3 rounded-xl',
+    sm: 'ui-button--sm',
+    md: 'ui-button--md',
+    lg: 'ui-button--lg',
   };
 </script>
 

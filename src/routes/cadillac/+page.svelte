@@ -8,12 +8,14 @@
 
 <Section>
   <Container>
-    <div class="relative overflow-hidden rounded-3xl border border-white/40 bg-white/20 shadow-xl">
-      <div class="absolute inset-0 bg-gradient-to-br from-primary-100/70 via-white/60 to-secondary-100/70"></div>
+    <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-[rgba(10,10,10,0.75)] shadow-xl chrome-border">
+      <div class="absolute inset-0 bg-gradient-to-br from-black via-black/70 to-secondary-900/40"></div>
       <div class="relative z-10 grid gap-10 p-8 md:grid-cols-2 md:items-center md:p-12">
-        <div class="rounded-3xl border border-white/70 bg-white/70 p-6 backdrop-blur-xl shadow-lg">
-          <p class="text-sm uppercase tracking-[0.2em] text-gray-500">Signature Apparatus</p>
-          <h1 class="mt-4 font-heading text-5xl text-gray-900 md:text-6xl">Der CADILLAC</h1>
+        <div class="ui-panel rounded-3xl p-6 backdrop-blur-xl">
+          <p class="ui-micro text-xs text-gray-700">Signature Apparatus</p>
+          <h1 class="mt-4 font-heading text-5xl text-gray-900 chrome-text md:text-6xl">
+            Der CADILLAC
+          </h1>
           <p class="mt-4 text-lg text-gray-600">
             Der Cadillac ist das vielseitigste Pilates-Geraet im Personal Training. In Berlin
             begleite ich dich mit Kraft, Mobilitaet und Kontrolle in einer Session, die sich wie
@@ -23,17 +25,17 @@
             <Button href="/kontakt">Training anfragen</Button>
             <Button variant="secondary" href="/preise">Pakete ansehen</Button>
           </div>
-          <div class="mt-6 flex flex-wrap gap-6 text-sm text-gray-500">
+          <div class="mt-6 flex flex-wrap gap-6 text-sm text-gray-600">
             <div>
-              <p class="font-heading text-2xl text-gray-900">60</p>
+              <p class="font-heading text-2xl text-gray-900 chrome-text">60</p>
               <p>Minuten Session</p>
             </div>
             <div>
-              <p class="font-heading text-2xl text-gray-900">1:1</p>
+              <p class="font-heading text-2xl text-gray-900 chrome-text">1:1</p>
               <p>Persoenlich</p>
             </div>
             <div>
-              <p class="font-heading text-2xl text-gray-900">100%</p>
+              <p class="font-heading text-2xl text-gray-900 chrome-text">100%</p>
               <p>Individuell</p>
             </div>
           </div>
@@ -61,13 +63,13 @@
               rundum stabile Koerpermitte.
             </p>
             <div class="mt-4 flex flex-wrap gap-2 text-xs text-gray-600">
-              <span class="rounded-full border border-white/70 bg-white/70 px-3 py-1">
+              <span class="rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-3 py-1">
                 Kraftaufbau
               </span>
-              <span class="rounded-full border border-white/70 bg-white/70 px-3 py-1">
+              <span class="rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-3 py-1">
                 Schulterfreiheit
               </span>
-              <span class="rounded-full border border-white/70 bg-white/70 px-3 py-1">
+              <span class="rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-3 py-1">
                 Core Flow
               </span>
             </div>
@@ -82,8 +84,10 @@
   <Container>
     <div class="flex flex-col gap-8">
       <div>
-        <p class="text-sm uppercase tracking-[0.2em] text-gray-500">Der Apparat</p>
-        <h2 class="mt-3 font-heading text-4xl text-gray-900">Warum der Cadillac besonders ist</h2>
+        <p class="ui-micro text-xs text-gray-700">Der Apparat</p>
+        <h2 class="mt-3 font-heading text-4xl text-gray-900 chrome-text">
+          Warum der Cadillac besonders ist
+        </h2>
         <p class="mt-3 max-w-2xl text-lg text-gray-600">
           Der Cadillac bietet dir Stabilitaet und Freiheit zugleich. Ob Mobilisation, Kraft oder
           Kontrolle: Jede Session passt sich deinem Level an.
@@ -123,24 +127,26 @@
   <Container>
     <div class="grid gap-8 md:grid-cols-2 md:items-center">
       <div>
-        <p class="text-sm uppercase tracking-[0.2em] text-gray-500">Fuer wen geeignet?</p>
-        <h2 class="mt-3 font-heading text-4xl text-gray-900">Ein Geraet, viele Ziele</h2>
+        <p class="ui-micro text-xs text-gray-700">Fuer wen geeignet?</p>
+        <h2 class="mt-3 font-heading text-4xl text-gray-900 chrome-text">
+          Ein Geraet, viele Ziele
+        </h2>
         <p class="mt-3 text-lg text-gray-600">
           Ob du neu startest oder gezielt trainierst – wir passen die Session an deinen Koerper und
           deine Tagesform an.
         </p>
       </div>
       <div class="grid gap-3 text-sm text-gray-600 sm:grid-cols-2">
-        <div class="rounded-xl border border-gray-200 bg-white px-4 py-3">
+        <div class="rounded-xl border border-white/10 bg-[rgba(255,255,255,0.03)] px-4 py-3">
           Mehr Stabilitaet im Alltag
         </div>
-        <div class="rounded-xl border border-gray-200 bg-white px-4 py-3">
+        <div class="rounded-xl border border-white/10 bg-[rgba(255,255,255,0.03)] px-4 py-3">
           Schulter- und Rueckenfreiheit
         </div>
-        <div class="rounded-xl border border-gray-200 bg-white px-4 py-3">
+        <div class="rounded-xl border border-white/10 bg-[rgba(255,255,255,0.03)] px-4 py-3">
           Reha-orientiertes Training
         </div>
-        <div class="rounded-xl border border-gray-200 bg-white px-4 py-3">
+        <div class="rounded-xl border border-white/10 bg-[rgba(255,255,255,0.03)] px-4 py-3">
           Kraft und Koordination
         </div>
       </div>
@@ -150,9 +156,11 @@
 
 <Section background="gray">
   <Container>
-    <div class="rounded-2xl border border-gray-200 bg-white p-6 text-center shadow-sm">
-      <p class="text-sm uppercase tracking-[0.2em] text-gray-500">Bereit fuer deine Session?</p>
-      <p class="mt-3 font-heading text-3xl text-gray-900">Der CADILLAC wartet auf dich</p>
+    <div class="ui-panel chrome-border rounded-2xl p-6 text-center">
+      <p class="ui-micro text-xs text-gray-700">Bereit fuer deine Session?</p>
+      <p class="mt-3 font-heading text-3xl text-gray-900 chrome-text">
+        Der CADILLAC wartet auf dich
+      </p>
       <p class="mt-3 text-sm text-gray-600">
         Lass uns wissen, welche Ziele du hast – wir empfehlen dir das passende Format.
       </p>
