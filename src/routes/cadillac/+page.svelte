@@ -47,11 +47,6 @@
 
         <div class="grid gap-4">
           <Card>
-            <img
-              src={asset('/images/info/platzhalter.webp')}
-              alt="Cadillac Apparat"
-              class="mb-4 w-full rounded-xl"
-            />
             <p class="text-sm text-gray-500">Trainer Focus</p>
             <p class="mt-2 font-heading text-2xl text-gray-900">Alignment & Kontrolle</p>
             <p class="mt-2 text-sm text-gray-600">

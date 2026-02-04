@@ -209,14 +209,11 @@
     <div class="flex flex-col gap-6">
       <div>
         <p class="ui-micro text-gray-700">Training Highlights</p>
-        <h2
-          class="editorial-heading ui-outline outline-thin outline-clean block font-extrabold tracking-[0.14em]"
-        >
+        <h2 class="editorial-heading highlight-filled block font-extrabold tracking-[0.14em]">
           Highlights
         </h2>
         <p class="mt-3 max-w-2xl text-sm text-gray-700">
-          Schwerpunkte aus dem Cadillac Personal Training in Berlin. Klar strukturiert, ohne
-          Ablenkung.
+          Schwerpunkte aus dem Cadillac Personal Training in Berlin.
         </p>
       </div>
 
@@ -240,7 +237,9 @@
     <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
       <div>
         <p class="ui-micro text-gray-700">Session</p>
-        <h2 class="editorial-heading">Ablauf</h2>
+        <h2 class="editorial-heading highlight-filled block font-extrabold tracking-[0.14em]">
+          Ablauf
+        </h2>
         <p class="mt-3 text-sm text-gray-700">
           Beispielstruktur für eine 60-Minuten Einheit am Cadillac Reformer.
         </p>
@@ -259,12 +258,19 @@
   </Container>
 </section>
 
-<section class="section-editorial">
+<section class="section-editorial section-editorial--start">
   <Container>
-    <div class="cta-panel chrome-border">
+    <div class="cta-panel cta-panel--bg chrome-border">
+      <div
+        class="cta-panel__bg"
+        style={`background-image: url(${asset('/images/editorial/bg1.webp')})`}
+      ></div>
+      <div class="cta-panel__overlay"></div>
       <div>
         <p class="ui-micro text-gray-700">Bereit für deine Session?</p>
-        <h2 class="editorial-heading chrome-text">Start</h2>
+        <h2 class="editorial-heading highlight-filled block font-extrabold tracking-[0.14em]">
+          Start
+        </h2>
         <p class="mt-3 max-w-xl text-sm text-gray-700">
           Lass uns wissen, welche Ziele du hast. Ich empfehle dir das passende Format und die
           richtige Intensität.
