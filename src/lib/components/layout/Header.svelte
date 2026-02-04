@@ -23,7 +23,7 @@
       <Navigation />
 
       <div class="flex items-center gap-3">
-        <Button variant="secondary" size="sm" href="/kontakt">Probestunde</Button>
+        <Button variant="secondary" size="sm"  href="/kontakt">Probestunde</Button>
         <button
           class="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-gray-800 md:hidden"
           aria-label="Menü öffnen"

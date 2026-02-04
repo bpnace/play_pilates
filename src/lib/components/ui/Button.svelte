@@ -21,7 +21,7 @@
   }>();
 
   const baseClasses =
-    'ui-button focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:opacity-60 disabled:pointer-events-none';
+    'ui-button font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:opacity-60 disabled:pointer-events-none';
 
   const variantClasses: Record<string, string> = {
     primary: 'ui-button--accent',

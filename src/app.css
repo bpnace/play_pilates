@@ -146,7 +146,7 @@
     text-transform: uppercase;
     padding: 0.9rem 1.6rem;
     transition: transform 200ms ease, border-color 200ms ease, color 200ms ease,
-      background 200ms ease;
+      background 200ms ease, box-shadow 200ms ease, filter 200ms ease;
   }
 
   .ui-button--sm {
@@ -168,13 +168,17 @@
     background: var(--chrome-gradient);
     color: #080808;
     border-color: transparent;
-    box-shadow: 0 20px 60px rgba(80, 90, 130, 0.35);
+    box-shadow: 0 18px 50px rgba(120, 150, 210, 0.45);
+    filter: brightness(1.1) saturate(1.05);
   }
 
   .ui-button--outline {
-    background: transparent;
+    border: 1px solid transparent;
+    background: linear-gradient(rgba(12, 12, 16, 0.55), rgba(12, 12, 16, 0.55)) padding-box,
+      var(--chrome-gradient) border-box;
     color: var(--text);
-    border-color: var(--line-strong);
+    box-shadow: 0 18px 45px rgba(90, 120, 180, 0.35);
+    filter: none;
   }
 
   .ui-button--ghost {
@@ -192,6 +196,16 @@
 
   .ui-button:hover {
     transform: translateY(-1px);
+  }
+
+  .ui-button--accent:hover {
+    filter: brightness(0.9) saturate(0.95);
+    box-shadow: 0 16px 40px rgba(90, 115, 170, 0.5);
+  }
+
+  .ui-button--outline:hover {
+    filter: brightness(0.9) saturate(0.95);
+    box-shadow: 0 14px 36px rgba(80, 100, 150, 0.45);
   }
 
   .ui-button:active {
@@ -237,6 +251,7 @@
     transform: scaleX(1);
     background: var(--chrome-gradient);
   }
+
 
   .ui-input {
     width: 100%;
@@ -520,11 +535,16 @@
   margin-top: 2rem;
 }
 
+.hero__cta .ui-button,
+.hero__cta .ui-button:hover {
+  box-shadow: none;
+}
+
 .hero__right {
   position: absolute;
   right: 8vw;
   top: 20vh;
-  width: min(42vw, 520px);
+  width: min(34vw, 440px);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -688,6 +708,7 @@
     width: auto;
     margin: 2.5rem 6vw 0;
   }
+
 
   .editorial-item {
     grid-template-columns: minmax(0, 1fr);
