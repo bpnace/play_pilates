@@ -29,7 +29,7 @@
               <p class="mt-2 text-sm text-gray-600">Berlin Mitte, 10115 Berlin</p>
             </Card>
             <Card padding="md">
-              <p class="ui-micro text-xs text-gray-700">Verfuegbarkeit</p>
+              <p class="ui-micro text-xs text-gray-700">Verfügbarkeit</p>
               <p class="mt-3 text-sm text-gray-600">Mo–So: nach Vereinbarung</p>
             </Card>
             <Card padding="md">
@@ -46,12 +46,10 @@
 
           <div class="ui-panel chrome-border rounded-2xl p-6">
             <p class="ui-micro text-xs text-gray-700">Erstes Training</p>
-            <p class="mt-2 text-lg font-semibold text-gray-900">
-              So laeuft dein Ersttraining ab
-            </p>
+            <p class="mt-2 text-lg font-semibold text-gray-900">So läuft dein Ersttraining ab</p>
             <div class="mt-4 grid gap-3 text-sm text-gray-600 sm:grid-cols-2">
               <div class="rounded-xl border border-white/10 bg-[rgba(255,255,255,0.03)] px-4 py-3">
-                Check-in 10 Min vor Start, kurze Einfuehrung am Cadillac.
+                Check-in 10 Min vor Start, kurze Einführung am Cadillac.
               </div>
               <div class="rounded-xl border border-white/10 bg-[rgba(255,255,255,0.03)] px-4 py-3">
                 Bitte rutschfeste Socken und bequeme Kleidung mitbringen.
@@ -70,9 +68,7 @@
           <div class="flex flex-col gap-4">
             <div>
               <p class="ui-micro text-xs text-gray-700">Anfrage</p>
-              <p class="mt-2 text-xl font-semibold text-gray-900">
-                Buche dein Ersttraining
-              </p>
+              <p class="mt-2 text-xl font-semibold text-gray-900">Buche dein Ersttraining</p>
               <p class="mt-2 text-sm text-gray-600">
                 Wir melden uns innerhalb von 24 Stunden mit Terminvorschlägen.
               </p>
@@ -102,10 +98,18 @@
 <Section background="gray">
   <Container>
     <div class="grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
-      <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-[rgba(10,10,10,0.75)] chrome-border">
-        <div class="absolute inset-0 bg-gradient-to-br from-black via-black/70 to-secondary-900/40"></div>
-        <div class="absolute left-8 top-8 h-40 w-40 rounded-full border border-dashed border-white/10"></div>
-        <div class="absolute right-10 top-12 h-24 w-40 rounded-2xl border border-white/10 bg-[rgba(255,255,255,0.04)]"></div>
+      <div
+        class="relative overflow-hidden rounded-2xl border border-white/10 bg-[rgba(10,10,10,0.75)] chrome-border"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-black via-black/70 to-secondary-900/40"
+        ></div>
+        <div
+          class="absolute left-8 top-8 h-40 w-40 rounded-full border border-dashed border-white/10"
+        ></div>
+        <div
+          class="absolute right-10 top-12 h-24 w-40 rounded-2xl border border-white/10 bg-[rgba(255,255,255,0.04)]"
+        ></div>
         <div class="absolute inset-x-10 top-1/2 h-0.5 bg-white/10"></div>
         <div class="absolute left-20 top-10 h-48 w-0.5 bg-white/10"></div>
         <div class="absolute left-1/2 top-14 h-52 w-0.5 bg-white/10"></div>
@@ -114,10 +118,14 @@
         >
           <span class="h-3 w-3 rounded-full bg-black"></span>
         </div>
-        <div class="absolute left-6 top-6 rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] px-3 py-1 text-xs text-gray-700">
+        <div
+          class="absolute left-6 top-6 rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] px-3 py-1 text-xs text-gray-700"
+        >
           Berlin Mitte (Platzhalter)
         </div>
-        <div class="absolute bottom-6 right-6 rounded-xl border border-white/10 bg-[rgba(255,255,255,0.06)] px-4 py-3 text-sm text-gray-700">
+        <div
+          class="absolute bottom-6 right-6 rounded-xl border border-white/10 bg-[rgba(255,255,255,0.06)] px-4 py-3 text-sm text-gray-700"
+        >
           Nina Untch Pilates
         </div>
         <div class="relative h-72"></div>
@@ -128,17 +136,17 @@
         <h2 class="font-heading text-4xl text-gray-900 chrome-text">So findest du mich</h2>
         <p class="text-sm text-gray-600">
           Das Training findet in Berlin Mitte statt. Die genaue Adresse bekommst du nach der
-          Buchung. Plane etwas Zeit fuer das Einchecken ein, damit du entspannt startest.
+          Buchung. Plane etwas Zeit für das Einchecken ein, damit du entspannt startest.
         </p>
         <div class="grid gap-3 text-sm text-gray-600">
           <div class="rounded-xl border border-white/10 bg-[rgba(255,255,255,0.03)] px-4 py-3">
-            OePNV: U5, U6 und Bus 42 bis Stadtmitte, dann 3 Minuten zu Fuss.
+            ÖPNV: U5, U6 und Bus 42 bis Stadtmitte, dann 3 Minuten zu Fuß.
           </div>
           <div class="rounded-xl border border-white/10 bg-[rgba(255,255,255,0.03)] px-4 py-3">
-            Parken: Kurzzeitparkplaetze in der Tiefgarage Koenigsbau.
+            Parken: Kurzzeitparkplätze in der Tiefgarage Königsbau.
           </div>
           <div class="rounded-xl border border-white/10 bg-[rgba(255,255,255,0.03)] px-4 py-3">
-            Fahrrad: Sichere Stellplaetze direkt vor Ort.
+            Fahrrad: Sichere Stellplätze direkt vor Ort.
           </div>
         </div>
         <div class="mt-2">

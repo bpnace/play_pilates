@@ -19,7 +19,7 @@
         </ul>
       </div>
       <div>
-        <p class="ui-micro text-xs text-gray-700">Oeffnungszeiten</p>
+        <p class="ui-micro text-xs text-gray-700">Öffnungszeiten</p>
         <ul class="mt-3 space-y-2 text-sm text-gray-800">
           <li>Mo–Fr: 07:00 – 21:00</li>
           <li>Sa: 09:00 – 16:00</li>

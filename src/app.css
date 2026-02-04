@@ -85,7 +85,18 @@
     color: transparent;
     -webkit-text-stroke: 1px rgba(230, 231, 234, 0.8);
     text-stroke: 1px rgba(230, 231, 234, 0.8);
+    -webkit-text-stroke-linejoin: round;
+    text-stroke-linejoin: round;
     text-shadow: 0 0 18px rgba(200, 210, 255, 0.18);
+  }
+
+  .outline-thin {
+    -webkit-text-stroke-width: 0.7px;
+    text-stroke-width: 0.7px;
+  }
+
+  .outline-clean {
+    text-shadow: none;
   }
 
   .ui-panel {
@@ -303,6 +314,15 @@
   background: var(--bg);
 }
 
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: contrast(1.05) brightness(0.7) saturate(0.9);
+}
+
 .hero__video {
   position: absolute;
   inset: 0;
@@ -315,12 +335,18 @@
 .hero__wash {
   position: absolute;
   inset: 0;
-  background: radial-gradient(
+  background: linear-gradient(
+      90deg,
+      rgba(7, 7, 7, 0.78) 0%,
+      rgba(9, 9, 10, 0.45) 55%,
+      rgba(12, 12, 14, 0.12) 100%
+    ),
+    radial-gradient(
       55% 60% at 70% 20%,
       rgba(180, 190, 255, 0.12),
       transparent 60%
     ),
-    linear-gradient(180deg, rgba(9, 9, 9, 0.2), rgba(9, 9, 9, 0.78));
+    linear-gradient(180deg, rgba(9, 9, 9, 0.25), rgba(9, 9, 9, 0.78));
 }
 
 .hero__grain {
@@ -388,9 +414,9 @@
 .hero__mask {
   position: relative;
   margin-top: 2.5rem;
-  width: min(90vw, 980px);
-  height: clamp(220px, 28vw, 420px);
-  --hero-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 420'%3E%3Ctext x='0' y='205' fill='white' font-size='220' font-family='Mulish%2C%20sans-serif' font-weight='800' letter-spacing='26'%3ENINA%3C/text%3E%3Ctext x='0' y='410' fill='white' font-size='220' font-family='Mulish%2C%20sans-serif' font-weight='800' letter-spacing='26'%3EUNTCH%3C/text%3E%3C/svg%3E");
+  width: min(78vw, 860px);
+  height: clamp(200px, 24vw, 380px);
+  --hero-mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20334%20163%27%3E%3Cpath%20d%3D%27M288.048%2092.5V118.612H314.312V92.5H333.072V161.18H314.312V134.108H288.048V161.18H269.288V92.5H288.048Z%27%20fill%3D%27white%27%2F%3E%3Cpath%20d%3D%27M238.053%2091.4441C242.771%2091.4441%20247.082%2092.09%20250.98%2093.3894H250.979C254.872%2094.623%20258.165%2096.4135%20260.847%2098.7683L261.108%2098.9968L260.985%2099.321L255.705%20113.241L255.474%20113.849L254.946%20113.47C252.028%20111.378%20249.353%20109.934%20246.919%20109.123L246.911%20109.12L246.905%20109.117C244.538%20108.245%20241.815%20107.804%20238.726%20107.804C233.068%20107.804%20228.767%20109.466%20225.748%20112.731C222.79%20115.936%20221.274%20120.597%20221.274%20126.792C221.274%20133.047%20222.788%20137.771%20225.745%20141.041L226.031%20141.337C229.033%20144.345%20233.242%20145.876%20238.726%20145.876C241.625%20145.876%20244.203%20145.516%20246.467%20144.802L246.915%20144.655C249.353%20143.779%20252.029%20142.302%20254.946%20140.21L255.474%20139.831L255.705%20140.439L260.985%20154.359L261.108%20154.683L260.847%20154.912C258.166%20157.266%20254.873%20159.089%20250.98%20160.386L250.972%20160.388C247.076%20161.622%20242.768%20162.236%20238.053%20162.236C230.628%20162.236%20224.175%20160.783%20218.713%20157.857L218.711%20157.855C213.317%20154.93%20209.12%20150.799%20206.129%20145.469L206.127%20145.465C203.2%20140.131%20201.745%20133.901%20201.745%20126.792C201.745%20119.683%20203.2%20113.485%20206.128%20108.214L206.129%20108.212C209.12%20102.881%20213.317%2098.7497%20218.711%2095.825L218.713%2095.823C224.175%2092.8969%20230.628%2091.4441%20238.053%2091.4441Z%27%20fill%3D%27white%27%2F%3E%3Cpath%20d%3D%27M201.048%2092.5V107.804H180.504V161.18H161.744V107.804H141.2V92.5H201.048Z%27%20fill%3D%27white%27%2F%3E%3Cpath%20d%3D%27M86.6768%2092.5L86.8271%2092.6865L117.426%20130.654V92.5H134.842V161.18H121.046L120.896%20160.993L90.4902%20123.05V161.18H72.8818V92.5H86.6768Z%27%20fill%3D%27white%27%2F%3E%3Cpath%20d%3D%27M19.1641%2092.5V131.976C19.1641%20136.841%2020.1756%20140.454%2022.1221%20142.891C24.0448%20145.234%2027.0783%20146.452%2031.3359%20146.452C35.5936%20146.452%2038.6271%20145.234%2040.5498%20142.891C42.4963%20140.454%2043.5078%20136.841%2043.5078%20131.976V92.5H61.9805V131.88C61.9805%20141.878%2059.464%20149.483%2054.3457%20154.602C49.2258%20159.721%2041.5229%20162.236%2031.3359%20162.236C21.1485%20162.236%2013.4155%20159.721%208.23242%20154.604C3.04895%20149.485%200.5%20141.879%200.5%20131.88V92.5H19.1641Z%27%20fill%3D%27white%27%2F%3E%3Cpath%20d%3D%27M216.427%200.5L216.562%200.787109L248.434%2068.4668L248.77%2069.1797H229.895L229.764%2068.8809L223.88%2055.4521H194.063L188.249%2068.8789L188.118%2069.1797H169.244L169.577%2068.4678L201.257%200.788086L201.392%200.5H216.427ZM200.226%2041.0117H217.959L209.054%2019.958L200.226%2041.0117Z%27%20fill%3D%27white%27%2F%3E%3Cpath%20d%3D%27M118.271%200.5L118.421%200.686523L149.02%2038.6543V0.5H166.436V69.1797H152.64L152.489%2068.9932L122.084%2031.0498V69.1797H104.476V0.5H118.271Z%27%20fill%3D%27white%27%2F%3E%3Cpath%20d%3D%27M92.9541%200.5V69.1797H74.1943V0.5H92.9541Z%27%20fill%3D%27white%27%2F%3E%3Cpath%20d%3D%27M14.583%200.5L14.7334%200.686523L45.332%2038.6543V0.5H62.748V69.1797H48.9521L48.8018%2068.9932L18.3965%2031.0498V69.1797H0.788086V0.5H14.583Z%27%20fill%3D%27white%27%2F%3E%3C%2Fsvg%3E");
 }
 
 .hero__mask-glow {
@@ -427,6 +453,17 @@
   mask-position: left center;
   -webkit-mask-mode: alpha;
   mask-mode: alpha;
+}
+
+.hero__mask-outline {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+  filter: drop-shadow(0 0 8px rgba(200, 210, 255, 0.25));
 }
 
 .hero__mask-video {
@@ -483,17 +520,29 @@
   margin-top: 2rem;
 }
 
-.hero__blur {
+.hero__right {
   position: absolute;
   right: 8vw;
   top: 20vh;
   width: min(42vw, 520px);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  z-index: 2;
+}
+
+.hero__cta--right {
+  margin-top: 0;
+}
+
+.hero__blur {
+  position: relative;
+  width: 100%;
   padding: 2rem;
   border-radius: 1.25rem;
   --chrome-fill: rgba(10, 10, 12, 0.55);
   backdrop-filter: blur(16px);
   box-shadow: var(--shadow);
-  z-index: 2;
 }
 
 .hero__panel-title {
@@ -625,10 +674,14 @@
 
   .hero__mask {
     width: 100%;
-    height: clamp(200px, 42vw, 340px);
+    height: clamp(190px, 40vw, 320px);
   }
 
   .hero__blur {
+    margin: 0;
+  }
+
+  .hero__right {
     position: relative;
     top: auto;
     right: auto;

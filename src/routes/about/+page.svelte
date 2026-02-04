@@ -26,7 +26,7 @@
   <Container>
     <div class="flex flex-col gap-8">
       <div>
-        <p class="ui-micro text-xs text-gray-700">Ueber mich</p>
+        <p class="ui-micro text-xs text-gray-700">Über mich</p>
         <h1 class="mt-3 font-heading text-5xl text-gray-900 chrome-text">Personal Training</h1>
         <p class="mt-3 max-w-2xl text-lg text-gray-600">
           Persönliches Cadillac Reformer Training in Berlin, klar strukturiert und auf dich
@@ -68,13 +68,12 @@
         <p class="ui-micro text-xs text-gray-700">Arbeitsweise</p>
         <h2 class="mt-3 font-heading text-4xl text-gray-900 chrome-text">Mein Ansatz</h2>
         <p class="mt-3 text-lg text-gray-600">
-          Nina Untch Pilates steht fuer persoenliches Cadillac Reformer Training in Berlin. Ich
-          arbeite 1:1, ruhig und praezise, damit du Kraft, Mobilitaet und Kontrolle aufbauen
-          kannst.
+          Nina Untch Pilates steht für persönliches Cadillac Reformer Training in Berlin. Ich
+          arbeite 1:1, ruhig und präzise, damit du Kraft, Mobilität und Kontrolle aufbauen kannst.
         </p>
         <p class="mt-4 text-lg text-gray-600">
           Jede Session startet mit einem kurzen Check-in. Danach folgen gezielte Sequenzen am
-          Cadillac, die deine Haltung stabilisieren und deine Bewegungsqualitaet verbessern.
+          Cadillac, die deine Haltung stabilisieren und deine Bewegungsqualität verbessern.
         </p>
         <p class="mt-4 text-lg text-gray-600">
           Mein Anspruch ist klar: Fortschritt ohne Druck. Du bekommst feine Korrekturen, klares

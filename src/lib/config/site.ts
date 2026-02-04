@@ -1,6 +1,6 @@
 export const site = {
   name: 'Nina Untch Pilates',
-  description: 'Personal Training fuer Cadillac Reformer in Berlin.',
+  description: 'Personal Training für Cadillac Reformer in Berlin.',
   nav: [
     { label: 'Start', href: '/' },
     { label: 'Der CADILLAC', href: '/cadillac' },

@@ -8,8 +8,12 @@
 
 <Section>
   <Container>
-    <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-[rgba(10,10,10,0.75)] shadow-xl chrome-border">
-      <div class="absolute inset-0 bg-gradient-to-br from-black via-black/70 to-secondary-900/40"></div>
+    <div
+      class="relative overflow-hidden rounded-3xl border border-white/10 bg-[rgba(10,10,10,0.75)] shadow-xl chrome-border"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-black via-black/70 to-secondary-900/40"
+      ></div>
       <div class="relative z-10 grid gap-10 p-8 md:grid-cols-2 md:items-center md:p-12">
         <div class="ui-panel rounded-3xl p-6 backdrop-blur-xl">
           <p class="ui-micro text-xs text-gray-700">Signature Apparatus</p>
@@ -17,9 +21,9 @@
             Der CADILLAC
           </h1>
           <p class="mt-4 text-lg text-gray-600">
-            Der Cadillac ist das vielseitigste Pilates-Geraet im Personal Training. In Berlin
-            begleite ich dich mit Kraft, Mobilitaet und Kontrolle in einer Session, die sich wie
-            ein Upgrade fuer deinen ganzen Koerper anfuehlt.
+            Der Cadillac ist das vielseitigste Pilates-Gerät im Personal Training. In Berlin
+            begleite ich dich mit Kraft, Mobilität und Kontrolle in einer Session, die sich wie ein
+            Upgrade für deinen ganzen Körper anfühlt.
           </p>
           <div class="mt-6 flex flex-wrap gap-3">
             <Button href="/kontakt">Training anfragen</Button>
@@ -32,7 +36,7 @@
             </div>
             <div>
               <p class="font-heading text-2xl text-gray-900 chrome-text">1:1</p>
-              <p>Persoenlich</p>
+              <p>Persönlich</p>
             </div>
             <div>
               <p class="font-heading text-2xl text-gray-900 chrome-text">100%</p>
@@ -51,25 +55,31 @@
             <p class="text-sm text-gray-500">Trainer Focus</p>
             <p class="mt-2 font-heading text-2xl text-gray-900">Alignment & Kontrolle</p>
             <p class="mt-2 text-sm text-gray-600">
-              Die gefuehrten Seile und Federn geben dir klares Feedback und helfen, Bewegungen
-              praezise aufzubauen.
+              Die geführten Seile und Federn geben dir klares Feedback und helfen, Bewegungen
+              präzise aufzubauen.
             </p>
           </Card>
           <Card>
             <p class="text-sm text-gray-500">Was dich erwartet</p>
             <p class="mt-2 font-heading text-2xl text-gray-900">Athletisch, ruhig, exakt</p>
             <p class="mt-2 text-sm text-gray-600">
-              Wir kombinieren fliessende Sequenzen mit kontrollierten Haltephasen fuer eine
-              rundum stabile Koerpermitte.
+              Wir kombinieren fließende Sequenzen mit kontrollierten Haltephasen für eine rundum
+              stabile Körpermitte.
             </p>
             <div class="mt-4 flex flex-wrap gap-2 text-xs text-gray-600">
-              <span class="rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-3 py-1">
+              <span
+                class="rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-3 py-1"
+              >
                 Kraftaufbau
               </span>
-              <span class="rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-3 py-1">
+              <span
+                class="rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-3 py-1"
+              >
                 Schulterfreiheit
               </span>
-              <span class="rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-3 py-1">
+              <span
+                class="rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-3 py-1"
+              >
                 Core Flow
               </span>
             </div>
@@ -89,33 +99,33 @@
           Warum der Cadillac besonders ist
         </h2>
         <p class="mt-3 max-w-2xl text-lg text-gray-600">
-          Der Cadillac bietet dir Stabilitaet und Freiheit zugleich. Ob Mobilisation, Kraft oder
+          Der Cadillac bietet dir Stabilität und Freiheit zugleich. Ob Mobilisation, Kraft oder
           Kontrolle: Jede Session passt sich deinem Level an.
         </p>
       </div>
 
       <div class="grid gap-6 md:grid-cols-3">
         <Card>
-          <p class="text-sm text-gray-500">Unterstuetzung</p>
-          <p class="mt-2 font-heading text-2xl text-gray-900">Gefuehrte Bewegung</p>
+          <p class="text-sm text-gray-500">Unterstützung</p>
+          <p class="mt-2 font-heading text-2xl text-gray-900">Geführte Bewegung</p>
           <p class="mt-2 text-sm text-gray-600">
             Federn und Gurte geben Orientierung und helfen dir, anspruchsvolle Patterns sicher zu
             lernen.
           </p>
         </Card>
         <Card>
-          <p class="text-sm text-gray-500">Mobilitaet</p>
+          <p class="text-sm text-gray-500">Mobilität</p>
           <p class="mt-2 font-heading text-2xl text-gray-900">Offene Ketten</p>
           <p class="mt-2 text-sm text-gray-600">
-            Mehr Raum fuer Schulter, Wirbelsaeule und Huefte – ideal fuer einen freien, langen
+            Mehr Raum für Schulter, Wirbelsäule und Hüfte – ideal für einen freien, langen
             Bewegungsbogen.
           </p>
         </Card>
         <Card>
           <p class="text-sm text-gray-500">Kraft</p>
-          <p class="mt-2 font-heading text-2xl text-gray-900">Core & Stabilitaet</p>
+          <p class="mt-2 font-heading text-2xl text-gray-900">Core & Stabilität</p>
           <p class="mt-2 text-sm text-gray-600">
-            Die Federn liefern Widerstand, der dich fokussiert und deine Koerpermitte aktiviert.
+            Die Federn liefern Widerstand, der dich fokussiert und deine Körpermitte aktiviert.
           </p>
         </Card>
       </div>
@@ -127,21 +137,19 @@
   <Container>
     <div class="grid gap-8 md:grid-cols-2 md:items-center">
       <div>
-        <p class="ui-micro text-xs text-gray-700">Fuer wen geeignet?</p>
-        <h2 class="mt-3 font-heading text-4xl text-gray-900 chrome-text">
-          Ein Geraet, viele Ziele
-        </h2>
+        <p class="ui-micro text-xs text-gray-700">Für wen geeignet?</p>
+        <h2 class="mt-3 font-heading text-4xl text-gray-900 chrome-text">Ein Gerät, viele Ziele</h2>
         <p class="mt-3 text-lg text-gray-600">
-          Ob du neu startest oder gezielt trainierst – wir passen die Session an deinen Koerper und
+          Ob du neu startest oder gezielt trainierst – wir passen die Session an deinen Körper und
           deine Tagesform an.
         </p>
       </div>
       <div class="grid gap-3 text-sm text-gray-600 sm:grid-cols-2">
         <div class="rounded-xl border border-white/10 bg-[rgba(255,255,255,0.03)] px-4 py-3">
-          Mehr Stabilitaet im Alltag
+          Mehr Stabilität im Alltag
         </div>
         <div class="rounded-xl border border-white/10 bg-[rgba(255,255,255,0.03)] px-4 py-3">
-          Schulter- und Rueckenfreiheit
+          Schulter- und Rückenfreiheit
         </div>
         <div class="rounded-xl border border-white/10 bg-[rgba(255,255,255,0.03)] px-4 py-3">
           Reha-orientiertes Training
@@ -157,7 +165,7 @@
 <Section background="gray">
   <Container>
     <div class="ui-panel chrome-border rounded-2xl p-6 text-center">
-      <p class="ui-micro text-xs text-gray-700">Bereit fuer deine Session?</p>
+      <p class="ui-micro text-xs text-gray-700">Bereit für deine Session?</p>
       <p class="mt-3 font-heading text-3xl text-gray-900 chrome-text">
         Der CADILLAC wartet auf dich
       </p>
