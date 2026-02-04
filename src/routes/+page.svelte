@@ -62,6 +62,7 @@
         </div>
 
         <div class="hero__mask" aria-hidden="true">
+          <div class="hero__mask-glow"></div>
           <div class="hero__mask-media">
             <video
               class="hero__mask-video"
@@ -145,7 +146,7 @@
   <Container>
     <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
       <div>
-        <p class="ui-micro text-gray-700">Session Ablauf</p>
+        <p class="ui-micro text-gray-700">Session</p>
         <h2 class="editorial-heading">Ablauf</h2>
         <p class="mt-3 text-sm text-gray-700">
           Beispielstruktur fuer eine 60-Minuten Einheit am Cadillac Reformer.

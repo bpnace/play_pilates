@@ -393,7 +393,28 @@
   --hero-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 420'%3E%3Ctext x='0' y='205' fill='white' font-size='220' font-family='Mulish%2C%20sans-serif' font-weight='800' letter-spacing='26'%3ENINA%3C/text%3E%3Ctext x='0' y='410' fill='white' font-size='220' font-family='Mulish%2C%20sans-serif' font-weight='800' letter-spacing='26'%3EUNTCH%3C/text%3E%3C/svg%3E");
 }
 
+.hero__mask-glow {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: rgba(255, 255, 255, 0.85);
+  -webkit-mask-image: var(--hero-mask);
+  mask-image: var(--hero-mask);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: left center;
+  mask-position: left center;
+  -webkit-mask-mode: alpha;
+  mask-mode: alpha;
+  filter: blur(8px);
+  opacity: 0.85;
+}
+
 .hero__mask-media {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 100%;
   -webkit-mask-image: var(--hero-mask);
@@ -424,6 +445,7 @@
   justify-content: center;
   gap: 0.2em;
   pointer-events: none;
+  z-index: 2;
   font-size: clamp(3.6rem, 12vw, 9rem);
   line-height: 0.85;
   text-transform: uppercase;
